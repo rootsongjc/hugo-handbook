@@ -20,9 +20,13 @@
         "github-buttons@2.1.0",
         "favicon@^0.0.2",
         "tbfed-pagefooter@^0.0.1",
-        "3-ba"
+        "3-ba",
+        "theme-default"
     ],
     "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
         "github": {
             "url": "https://github.com/rootsongjc/hugo-handbook"
         },
@@ -40,7 +44,7 @@
         },
         "tbfed-pagefooter": {
             "copyright": "Copyright © jimmysong.io 2017",
-            "modify_label": "Updated:",
+            "modify_label": "Updated: ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "favicon": {
