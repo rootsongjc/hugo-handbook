@@ -84,6 +84,10 @@ description: Where you should come to find my homepage updates and stuff
 
 要时刻牢记 SEO 的观念，你的文章是你对外的最好展示窗口，当你将文章的信息格式化话后，还可以对自己发表的文章进行统计分析。
 
+下面是SEO checklist供大家参考：
+
+![SEO checklist](../images/seo-checklist.jpg)
+
 ## 参考
 
 - [Front-End-Checklist - Github](https://github.com/thedaviddias/Front-End-Checklist)
