@@ -44,6 +44,7 @@
 - [网站评论插件](steps/comment-plugin.md)
 - [社交化分享工具](steps/social-share-plugin.md)
 - [网站安全性](steps/security.md)
+- [网站性能优化](steps/website-performence-optimization.md)
 - [搜索引擎优化（SEO）](steps/seo.md)
 
 
