@@ -35,7 +35,7 @@
 - [网站构建流程详解](steps/index.md)
 - [创建GitHub Pages](steps/create-github-pages.md)
 - [申请域名](steps/domain-name-apply.md)
-- [配置DNS](steps/dns-setup.md)
+- [配置DNS解析](steps/dns-setup.md)
 - [网站构建环境配置](steps/env-setup.md)
 - [主题选择与调试](steps/themes.md)
 - [静态文件存储](steps/static-file-storage.md)
