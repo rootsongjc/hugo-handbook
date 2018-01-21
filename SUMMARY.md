@@ -46,6 +46,7 @@
 - [网站安全性](steps/security.md)
 - [网站性能优化](steps/website-performence-optimization.md)
 - [搜索引擎优化（SEO）](steps/seo.md)
+- [自定义邮件服务器](steps/custom-email-server.md)
 
 
 ### BeautifulHugo
