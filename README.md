@@ -4,6 +4,8 @@
 
 手把手教你如何从0开始构建一个静态网站，这不需要有太多的编程和开发经验和时间投入，也基本不需要多少成本（除了个性化域名），使用GitHub和Hugo模板即可快速构建和上线一个网站。
 
+在线浏览地址：https://jimmysong.io/hugo-handbook
+
 Github地址：https://github.com/rootsongjc/hugo-handbook
 
 ## 目标读者
@@ -25,3 +27,7 @@ Github地址：https://github.com/rootsongjc/hugo-handbook
 - [Namecheap](https://www.namecheap.com)
 - [Steve Francia](https://stevefrancia.com/)
 - [七牛云存储](https://www.qiniu.com)
+
+## Hugo❤️ China User Group
+
+欢迎加入Hugo中国用户组，请扫描我的[微信二维码](https://jimmysong.io/about)，备注加入Hugo中国用户组，我将会把你拉入微信群中。
