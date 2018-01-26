@@ -39,3 +39,4 @@ Add Nameserver 输入的就是 cloudflare 注册时, 为您提供的 nameserver.
 ## 致谢
 
 - [GoDaddy批量使用第三方CloudFlare DNS](http://www.laodong.me/bulk-change-dns/#more-1288)
+- [国外免费DNS,CDN加速CloudFlare申请使用教程](https://jingyan.baidu.com/article/6766299787919c54d51b8480.html)
