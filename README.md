@@ -17,6 +17,10 @@ Github地址：https://github.com/rootsongjc/hugo-handbook
 - 希望学习网站构建、网站模板、web开发的用户
 - 对Go语言感兴趣，希望从事开源项目的用户👏
 
+## 贡献者
+
+感谢此书的[贡献者](https://github.com/rootsongjc/hugo-handbook/graphs/contributors)。
+
 ## 致谢
 
 - [Algolia](https://www.algolia.com)
