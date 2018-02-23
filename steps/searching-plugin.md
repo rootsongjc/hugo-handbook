@@ -1,6 +1,6 @@
 # 站内搜索插件
 
-[Hugo](https://gohugo.io/)是由 Steve Francis 大神([http://spf13.com/](http://spf13.com/))基于`Go`语言开发的静态网站构建工具。没错你现在看到的本博客[<blog.qikqiak.com>](https://blog.qikqiak.com/)就是基于`Hugo`的，使用 Hugo 创建一个网站是非常简单的，基本上没有什么门槛，官方还提供了大量的主题供你选择，你只需要专心写的文章就行。不过有个问题是搜索，我们知道搜索属于动态行为了，如何给静态网站增加搜索功能呢？当然我们可以使用`Google`的站内搜索功能，Hugo 官方也提供了一些开源的和商业的解决方案，今天我们要介绍的就是一个非常优秀的商业解决方案：[Algolia](https://www.algolia.com/)。
+[Hugo](https://gohugo.io/)是由 Steve Francis 大神([http://spf13.com/](http://spf13.com/))基于`Go`语言开发的静态网站构建工具。没错你现在看到的本博客[blog.qikqiak.com](https://blog.qikqiak.com/)就是基于`Hugo`的，使用 Hugo 创建一个网站是非常简单的，基本上没有什么门槛，官方还提供了大量的主题供你选择，你只需要专心写你的文章就行。不过有个问题是搜索，我们知道搜索属于动态行为了，如何给静态网站增加搜索功能呢？当然我们可以使用`Google`的站内搜索功能，Hugo 官方也提供了一些开源的和商业的解决方案，今天我们要介绍的就是一个非常优秀的商业解决方案：[Algolia](https://www.algolia.com/)。
 
 ## 简介
 [Algolia](https://www.algolia.com/)是为你的 APP 或者网站添加搜索的最佳方式。 开发人员可以使用 API 上传并同步希望搜索的数据，然后可以进行相关的配置，比如产品转化率等等。可以使用 InstantSearch 等前端框架进行自定义搜索，为用户创造最佳的搜索体验。
