@@ -108,6 +108,28 @@ var index = client.initIndex('qikqiak-blog');
     </div>
 </div>
 ```
+
+并且在下面代码下面，添加搜索入口按钮
+只要在config.toml文件[Params]里面带有algolia = "xxxxxxxxxxx"，配置按钮的配置就会生效。
+```html
+        {{ if isset .Site.Params "gcse" }}
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">{{ i18n "gcseLabelShort" }}</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        {{ end }}
+```
+```html
+        {{ if isset .Site.Params "algolia" }}
+        <li>
+          <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+            <span class="hidden-sm hidden-md hidden-lg">{{ i18n "gcseLabelShort" }}</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+          </a>
+        </li>
+        {{ end }}
+```
+
 其中最重要的代码是引入上面我们新建的`search.html`文件。剩下的就是一些美化搜索页面的工作，新建`themes/beautifulhugo/static/css/search.css`文件：
 ```css
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
