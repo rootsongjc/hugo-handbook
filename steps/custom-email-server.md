@@ -18,6 +18,22 @@
 - 在申请的腾讯企业邮箱中增加成员邮箱地址
 - 配置邮件收发客户端
 
+### 配置邮件客户端
+
+**POP3/SMTP协议接收邮件服务器**：pop.exmail.qq.com ，使用SSL，端口号995
+
+**发送邮件服务器**：smtp.exmail.qq.com ，使用SSL，端口号465
+
+在Mac中配置Mail中的邮箱账号，如下图所示。
+
+![Mac邮箱客户端配置](../images/mail-account-setting.jpg)
+
+在iPhone中配置邮件客户端如下图所示。
+
+![iOS邮箱设置](../images/ios-mail-account1.jpg)
+
+![iOS邮箱设置](../images/ios-mail-account2.jpg)
+
 ## 参考
 
 - [How do I add or edit mail or MX records?](https://support.cloudflare.com/hc/en-us/articles/218069617-How-do-I-add-or-edit-mail-or-MX-records-)
