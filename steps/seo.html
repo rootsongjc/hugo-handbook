@@ -41,7 +41,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-ghcolors.css">
                 
             
                 
@@ -612,14 +612,14 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="../theme/beautifulhugo-overview.html">
+        <li class="chapter " data-level="6.1" data-path="../themes/beautifulhugo-overview.html">
             
-                <a href="../theme/beautifulhugo-overview.html">
+                <a href="../themes/beautifulhugo-overview.html">
             
                     
                         <b>6.1.</b>
                     
-                    BeautifulHugo主题使用说明
+                    BeautifulHugo主题概览
             
                 </a>
             
@@ -690,16 +690,68 @@
 
     
         
+        <li class="header">hugo-universal</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../themes/hugo-universal-overview.html">
+            
+                <a href="../themes/hugo-universal-overview.html">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    hugo-universal主题使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../themes/hugo-universal-templates.html">
+            
+                <a href="../themes/hugo-universal-templates.html">
+            
+                    
+                        <b>7.2.</b>
+                    
+                    hugo-universal主题模块说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../themes/hugo-universal-settings.html">
+            
+                <a href="../themes/hugo-universal-settings.html">
+            
+                    
+                        <b>7.3.</b>
+                    
+                    hugo-universal主题配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
         <li class="header">数据分析</li>
         
         
     
-        <li class="chapter " data-level="7.1" >
+        <li class="chapter " data-level="8.1" >
             
                 <span>
             
                     
-                        <b>7.1.</b>
+                        <b>8.1.</b>
                     
                     网站数据分析
             
@@ -709,12 +761,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" >
+        <li class="chapter " data-level="8.2" >
             
                 <span>
             
                     
-                        <b>7.2.</b>
+                        <b>8.2.</b>
                     
                     数据准备
             
@@ -724,12 +776,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.3" >
+        <li class="chapter " data-level="8.3" >
             
                 <span>
             
                     
-                        <b>7.3.</b>
+                        <b>8.3.</b>
                     
                     数据加工
             
@@ -739,12 +791,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.4" >
+        <li class="chapter " data-level="8.4" >
             
                 <span>
             
                     
-                        <b>7.4.</b>
+                        <b>8.4.</b>
                     
                     数据处理
             
@@ -754,12 +806,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.5" >
+        <li class="chapter " data-level="8.5" >
             
                 <span>
             
                     
-                        <b>7.5.</b>
+                        <b>8.5.</b>
                     
                     数据展示
             
@@ -776,12 +828,12 @@
         
         
     
-        <li class="chapter " data-level="8.1" >
+        <li class="chapter " data-level="9.1" >
             
                 <span>
             
                     
-                        <b>8.1.</b>
+                        <b>9.1.</b>
                     
                     后记
             
@@ -853,41 +905,41 @@
 <p>&#x4E0B;&#x9762;&#x662F;&#x5BF9;&#x4F7F;&#x7528; Hugo &#x751F;&#x6210;&#x9759;&#x6001;&#x7F51;&#x9875;&#x7684; SEO &#x4F18;&#x5316;&#x5EFA;&#x8BAE;&#x3002;</p>
 <h2 id="&#x9875;&#x9762;&#x5173;&#x952E;&#x8BCD;">&#x9875;&#x9762;&#x5173;&#x952E;&#x8BCD;</h2>
 <p>&#x4E3A;&#x6BCF;&#x7BC7;&#x535A;&#x6587;&#x8BBE;&#x7F6E;&#x5173;&#x952E;&#x8BCD;&#xFF1A;</p>
-<pre><code class="lang-yaml"><span class="hljs-meta">---</span>
-<span class="hljs-attr">keywords:</span>
-<span class="hljs-bullet">-</span> mysite
-<span class="hljs-bullet">-</span> mysite keyword
-<span class="hljs-bullet">-</span> Another useful keyword
-<span class="hljs-attr">title:</span> My Homepage
-<span class="hljs-meta">---</span>
+<pre class="language-"><code class="lang-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">keywords</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> mysite
+<span class="token punctuation">-</span> mysite keyword
+<span class="token punctuation">-</span> Another useful keyword
+<span class="token key atrule">title</span><span class="token punctuation">:</span> My Homepage
+<span class="token punctuation">---</span>
 </code></pre>
-<p>&#x9700;&#x8981;&#x5728;&#x6587;&#x7AE0;&#x6A21;&#x677F;&#x7684; <code>header</code> &#x7684; <code>&lt;meta&gt;</code> &#x4E2D;&#x6DFB;&#x52A0;&#x5173;&#x952E;&#x8BCD;&#x5B57;&#x6BB5;&#x3002;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;{{ delimit .Keywords &quot;</span><span class="hljs-string">,</span> &quot; }}&quot; <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;keywords&quot;</span>&gt;</span>
+<p>&#x9700;&#x8981;&#x5728;&#x6587;&#x7AE0;&#x6A21;&#x677F;&#x7684; <code>header</code> &#x7684; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span><span class="token punctuation">&gt;</span></span></code> &#x4E2D;&#x6DFB;&#x52A0;&#x5173;&#x952E;&#x8BCD;&#x5B57;&#x6BB5;&#x3002;</p>
+<pre class="language-"><code class="lang-html">&lt;meta content=&quot;{{ delimit .Keywords &quot;, &quot; }}&quot; name=&quot;keywords&quot;&gt;
 </code></pre>
 <h2 id="&#x9875;&#x9762;&#x6807;&#x9898;">&#x9875;&#x9762;&#x6807;&#x9898;</h2>
-<p>&#x540C;&#x6837;&#xFF0C;&#x6BCF;&#x7BC7;&#x6587;&#x7AE0;&#x90FD;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x6807;&#x9898;&#xFF0C;&#x8FD9;&#x6837;&#x65B9;&#x4FBF;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x6536;&#x5F55;&#xFF0C;Hugo &#x751F;&#x6210;&#x7684;&#x6587;&#x7AE0;&#x4E00;&#x822C;&#x90FD;&#x4F1A;&#x5728;&#x6587;&#x7AE0;&#x7684;&#x5934;&#x90E8;&#x589E;&#x52A0;&#x8BE5;&#x5B57;&#x6BB5;&#xFF0C;&#x540C;&#x65F6;&#x6587;&#x7AE0;&#x6A21;&#x677F;&#x7684; <code>header</code> &#x4E2D;&#x4E5F;&#x9700;&#x8981;&#x6709; <code>&lt;title&gt;</code> &#x6807;&#x7B7E;&#x3002;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<p>&#x540C;&#x6837;&#xFF0C;&#x6BCF;&#x7BC7;&#x6587;&#x7AE0;&#x90FD;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x6807;&#x9898;&#xFF0C;&#x8FD9;&#x6837;&#x65B9;&#x4FBF;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x6536;&#x5F55;&#xFF0C;Hugo &#x751F;&#x6210;&#x7684;&#x6587;&#x7AE0;&#x4E00;&#x822C;&#x90FD;&#x4F1A;&#x5728;&#x6587;&#x7AE0;&#x7684;&#x5934;&#x90E8;&#x589E;&#x52A0;&#x8BE5;&#x5B57;&#x6BB5;&#xFF0C;&#x540C;&#x65F6;&#x6587;&#x7AE0;&#x6A21;&#x677F;&#x7684; <code>header</code> &#x4E2D;&#x4E5F;&#x9700;&#x8981;&#x6709; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span></code> &#x6807;&#x7B7E;&#x3002;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <p>&#x4E5F;&#x53EF;&#x4EE5;&#x5728; <code>meta</code> &#x4E2D;&#x6DFB;&#x52A0;&#x6807;&#x9898;&#x6807;&#x7B7E;&#x3002;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}&quot;</span> <span class="hljs-attr">property</span>=<span class="hljs-string">&quot;og:title&quot;</span>&gt;</span>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{ $isHomePage :<span class="token punctuation">=</span> eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>og:title<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h2 id="&#x9875;&#x9762;&#x63CF;&#x8FF0;">&#x9875;&#x9762;&#x63CF;&#x8FF0;</h2>
 <p>&#x5728; hugo &#x7684;&#x7F51;&#x7AD9;&#x914D;&#x7F6E;&#x6587;&#x4EF6; <code>config.toml</code> &#x4E2D;&#x8BBE;&#x7F6E;&#x7F51;&#x7AD9;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x5C06;&#x663E;&#x793A;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6807;&#x7B7E;&#x4E0A;&#xFF0C;&#x8BE5;&#x8BBE;&#x7F6E;&#x662F; hugo &#x5185;&#x7F6E;&#x7684;&#x3002;</p>
-<pre><code class="lang-toml"><span class="hljs-section">[params]</span>
-<span class="hljs-attr">description</span> = <span class="hljs-string">&quot;Site stuff for being a good site with internet tubez.&quot;</span>
+<pre class="language-"><code class="lang-toml">[params]
+description = &quot;Site stuff for being a good site with internet tubez.&quot;
 </code></pre>
 <p>&#x540C;&#x65F6;&#x4E5F;&#x53EF;&#x4EE5;&#x4E3A;&#x6BCF;&#x7BC7;&#x6587;&#x7AE0;&#x8BBE;&#x7F6E;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x4E2A; <code>description</code> &#x662F;&#x5341;&#x5206;&#x6709;&#x7528;&#x7684;&#xFF0C;&#x5F53;&#x4F60;&#x901A;&#x8FC7;&#x5404;&#x79CD;&#x793E;&#x4EA4;&#x8F6F;&#x4EF6;&#x5206;&#x4EAB;&#x9875;&#x9762;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x89E3;&#x6790;&#x8BE5;&#x5B57;&#x6BB5;&#xFF0C;&#x540C;&#x65F6;&#x663E;&#x793A;&#x9875;&#x9762;&#x7684;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#x3002;</p>
-<pre><code class="lang-yaml"><span class="hljs-meta">---</span>
-<span class="hljs-attr">keywords:</span>
-<span class="hljs-bullet">  -</span> mysite
-<span class="hljs-bullet">  -</span> mysite keyword
-<span class="hljs-bullet">  -</span> Another useful keyword
-<span class="hljs-attr">title:</span> My Homepage
-<span class="hljs-attr">description:</span> Where you should come to find my homepage updates and stuff
-<span class="hljs-meta">---</span>
+<pre class="language-"><code class="lang-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">keywords</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> mysite
+  <span class="token punctuation">-</span> mysite keyword
+  <span class="token punctuation">-</span> Another useful keyword
+<span class="token key atrule">title</span><span class="token punctuation">:</span> My Homepage
+<span class="token key atrule">description</span><span class="token punctuation">:</span> Where you should come to find my homepage updates and stuff
+<span class="token punctuation">---</span>
 </code></pre>
 <p>&#x540C;&#x6837;&#x662F;&#x5728;&#x6A21;&#x677F;&#x7684; <code>header</code> &#x4E2D;&#x7684;&#x52A0;&#x5165;&#x6807;&#x7B7E;&#x3002;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Description }}{{ end }}&quot;</span> <span class="hljs-attr">property</span>=<span class="hljs-string">&quot;og:description&quot;</span>&gt;</span>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{ $isHomePage :<span class="token punctuation">=</span> eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Description }}{{ end }}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>og:description<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <p>&#x8981;&#x65F6;&#x523B;&#x7262;&#x8BB0; SEO &#x7684;&#x89C2;&#x5FF5;&#xFF0C;&#x4F60;&#x7684;&#x6587;&#x7AE0;&#x662F;&#x4F60;&#x5BF9;&#x5916;&#x7684;&#x6700;&#x597D;&#x5C55;&#x793A;&#x7A97;&#x53E3;&#xFF0C;&#x5F53;&#x4F60;&#x5C06;&#x6587;&#x7AE0;&#x7684;&#x4FE1;&#x606F;&#x683C;&#x5F0F;&#x5316;&#x8BDD;&#x540E;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5BF9;&#x81EA;&#x5DF1;&#x53D1;&#x8868;&#x7684;&#x6587;&#x7AE0;&#x8FDB;&#x884C;&#x7EDF;&#x8BA1;&#x5206;&#x6790;&#x3002;</p>
 <p>&#x4E0B;&#x9762;&#x662F;SEO checklist&#x4F9B;&#x5927;&#x5BB6;&#x53C2;&#x8003;&#xFF1A;</p>
@@ -942,7 +994,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"搜索引擎优化（SEO）","level":"5.14","depth":1,"next":{"title":"自定义邮件服务器","level":"5.15","depth":1,"path":"steps/custom-email-server.md","ref":"steps/custom-email-server.md","articles":[]},"previous":{"title":"网站性能优化","level":"5.13","depth":1,"path":"steps/website-performence-optimization.md","ref":"steps/website-performence-optimization.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","image-captions","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © jimmysong.io 2017","modify_label":"Updated: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/rootsongjc/hugo-handbook"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/rootsongjc/hugo-handbook/blob/master/"},"splitter":{},"codesnippet":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"page-toc-button":{},"back-to-top-button":{},"github-buttons":{"repo":"rootsongjc/hugo-handbook","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"11f7d254cfa4e0ca44b175c66d379ecc"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{},"image-captions":{"caption":"图片 - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Jimmy Song","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"steps/dns-setup.html#fig5.4.1","level":"5.4","list_caption":"Figure: Cloudflare页面","alt":"Cloudflare页面","nro":1,"url":"../images/dns-jimmysong-cloudflare.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Cloudflare页面","attributes":{},"skip":false,"key":"5.4.1"},{"backlink":"steps/env-setup.html#fig5.5.1","level":"5.5","list_caption":"Figure: 网站技术栈","alt":"网站技术栈","nro":2,"url":"../images/jimmysong-io-web-stack.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"网站技术栈","attributes":{},"skip":false,"key":"5.5.1"},{"backlink":"steps/static-file-storage.html#fig5.7.1","level":"5.7","list_caption":"Figure: 七牛云对象存储页面","alt":"七牛云对象存储页面","nro":3,"url":"../images/qiniu-storage-bucket.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"七牛云对象存储页面","attributes":{},"skip":false,"key":"5.7.1"},{"backlink":"steps/static-file-storage.html#fig5.7.2","level":"5.7","list_caption":"Figure: 七牛云存储文件管理页面","alt":"七牛云存储文件管理页面","nro":4,"url":"../images/qiniu-storage-content-management.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"七牛云存储文件管理页面","attributes":{},"skip":false,"key":"5.7.2"},{"backlink":"steps/static-file-storage.html#fig5.7.3","level":"5.7","list_caption":"Figure: Cloudniary媒体库","alt":"Cloudniary媒体库","nro":5,"url":"../images/cloudinary-media-library.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"Cloudniary媒体库","attributes":{},"skip":false,"key":"5.7.3"},{"backlink":"steps/static-file-storage.html#fig5.7.4","level":"5.7","list_caption":"Figure: 图片详情页面","alt":"图片详情页面","nro":6,"url":"../images/cloudinary-media-library-image-detail.jpg","index":4,"caption_template":"图片 - _CAPTION_","label":"图片详情页面","attributes":{},"skip":false,"key":"5.7.4"},{"backlink":"steps/security.html#fig5.12.1","level":"5.12","list_caption":"Figure: 运营商劫持","alt":"运营商劫持","nro":7,"url":"https://res.cloudinary.com/jimmysong/image/upload/images/operator-dns-hijacking-ad.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"运营商劫持","attributes":{},"skip":false,"key":"5.12.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.1","level":"5.13","list_caption":"Figure: jimmysong.io","alt":"jimmysong.io","nro":8,"url":"../images/ping-pe-jimmysong.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"jimmysong.io","attributes":{},"skip":false,"key":"5.13.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.2","level":"5.13","list_caption":"Figure: Grafana中监控的jimmysong.io","alt":"Grafana中监控的jimmysong.io","nro":9,"url":"../images/grafana-wordping-jimmysong.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"Grafana中监控的jimmysong.io","attributes":{},"skip":false,"key":"5.13.2"},{"backlink":"steps/seo.html#fig5.14.1","level":"5.14","list_caption":"Figure: Google webmaster页面","alt":"Google webmaster页面","nro":10,"url":"../images/google-search-console-404-errors.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Google webmaster页面","attributes":{},"skip":false,"key":"5.14.1"},{"backlink":"steps/seo.html#fig5.14.2","level":"5.14","list_caption":"Figure: SEO checklist","alt":"SEO checklist","nro":11,"url":"../images/seo-checklist.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"SEO checklist","attributes":{},"skip":false,"key":"5.14.2"},{"backlink":"steps/custom-email-server.html#fig5.15.1","level":"5.15","list_caption":"Figure: Mac邮箱客户端配置","alt":"Mac邮箱客户端配置","nro":12,"url":"../images/mail-account-setting.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Mac邮箱客户端配置","attributes":{},"skip":false,"key":"5.15.1"},{"backlink":"steps/custom-email-server.html#fig5.15.2","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":13,"url":"../images/ios-mail-account1.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.2"},{"backlink":"steps/custom-email-server.html#fig5.15.3","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":14,"url":"../images/ios-mail-account2.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.3"}]},"title":"静态网站构建手册-使用Hugo构建博客","language":"zh-hans","links":{"sidebar":{"Jimmy Song":"https://jimmysong.io"}},"gitbook":"*","description":"静态网站构建手册-使用Hugo构建博客"},"file":{"path":"steps/seo.md","mtime":"2017-12-02T09:32:48.275Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-06T02:22:05.533Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"搜索引擎优化（SEO）","level":"5.14","depth":1,"next":{"title":"自定义邮件服务器","level":"5.15","depth":1,"path":"steps/custom-email-server.md","ref":"steps/custom-email-server.md","articles":[]},"previous":{"title":"网站性能优化","level":"5.13","depth":1,"path":"steps/website-performence-optimization.md","ref":"steps/website-performence-optimization.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","image-captions","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default","-highlight","prism","prism-themes"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © jimmysong.io 2017","modify_label":"Updated: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-ghcolors.css"]},"github":{"url":"https://github.com/rootsongjc/hugo-handbook"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/rootsongjc/hugo-handbook/blob/master/"},"splitter":{},"codesnippet":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"page-toc-button":{},"back-to-top-button":{},"prism-themes":{},"github-buttons":{"repo":"rootsongjc/hugo-handbook","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"11f7d254cfa4e0ca44b175c66d379ecc"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{},"image-captions":{"caption":"图片 - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Jimmy Song","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"steps/dns-setup.html#fig5.4.1","level":"5.4","list_caption":"Figure: Cloudflare页面","alt":"Cloudflare页面","nro":1,"url":"../images/dns-jimmysong-cloudflare.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Cloudflare页面","attributes":{},"skip":false,"key":"5.4.1"},{"backlink":"steps/env-setup.html#fig5.5.1","level":"5.5","list_caption":"Figure: 网站技术栈","alt":"网站技术栈","nro":2,"url":"../images/jimmysong-io-web-stack.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"网站技术栈","attributes":{},"skip":false,"key":"5.5.1"},{"backlink":"steps/static-file-storage.html#fig5.7.1","level":"5.7","list_caption":"Figure: 七牛云对象存储页面","alt":"七牛云对象存储页面","nro":3,"url":"../images/qiniu-storage-bucket.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"七牛云对象存储页面","attributes":{},"skip":false,"key":"5.7.1"},{"backlink":"steps/static-file-storage.html#fig5.7.2","level":"5.7","list_caption":"Figure: 七牛云存储文件管理页面","alt":"七牛云存储文件管理页面","nro":4,"url":"../images/qiniu-storage-content-management.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"七牛云存储文件管理页面","attributes":{},"skip":false,"key":"5.7.2"},{"backlink":"steps/static-file-storage.html#fig5.7.3","level":"5.7","list_caption":"Figure: Cloudniary媒体库","alt":"Cloudniary媒体库","nro":5,"url":"../images/cloudinary-media-library.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"Cloudniary媒体库","attributes":{},"skip":false,"key":"5.7.3"},{"backlink":"steps/static-file-storage.html#fig5.7.4","level":"5.7","list_caption":"Figure: 图片详情页面","alt":"图片详情页面","nro":6,"url":"../images/cloudinary-media-library-image-detail.jpg","index":4,"caption_template":"图片 - _CAPTION_","label":"图片详情页面","attributes":{},"skip":false,"key":"5.7.4"},{"backlink":"steps/security.html#fig5.12.1","level":"5.12","list_caption":"Figure: 运营商劫持","alt":"运营商劫持","nro":7,"url":"https://res.cloudinary.com/jimmysong/image/upload/images/operator-dns-hijacking-ad.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"运营商劫持","attributes":{},"skip":false,"key":"5.12.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.1","level":"5.13","list_caption":"Figure: jimmysong.io","alt":"jimmysong.io","nro":8,"url":"../images/ping-pe-jimmysong.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"jimmysong.io","attributes":{},"skip":false,"key":"5.13.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.2","level":"5.13","list_caption":"Figure: Grafana中监控的jimmysong.io","alt":"Grafana中监控的jimmysong.io","nro":9,"url":"../images/grafana-wordping-jimmysong.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"Grafana中监控的jimmysong.io","attributes":{},"skip":false,"key":"5.13.2"},{"backlink":"steps/seo.html#fig5.14.1","level":"5.14","list_caption":"Figure: Google webmaster页面","alt":"Google webmaster页面","nro":10,"url":"../images/google-search-console-404-errors.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Google webmaster页面","attributes":{},"skip":false,"key":"5.14.1"},{"backlink":"steps/seo.html#fig5.14.2","level":"5.14","list_caption":"Figure: SEO checklist","alt":"SEO checklist","nro":11,"url":"../images/seo-checklist.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"SEO checklist","attributes":{},"skip":false,"key":"5.14.2"},{"backlink":"steps/custom-email-server.html#fig5.15.1","level":"5.15","list_caption":"Figure: Mac邮箱客户端配置","alt":"Mac邮箱客户端配置","nro":12,"url":"../images/mail-account-setting.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Mac邮箱客户端配置","attributes":{},"skip":false,"key":"5.15.1"},{"backlink":"steps/custom-email-server.html#fig5.15.2","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":13,"url":"../images/ios-mail-account1.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.2"},{"backlink":"steps/custom-email-server.html#fig5.15.3","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":14,"url":"../images/ios-mail-account2.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.3"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.1","level":"7.3","list_caption":"Figure: 风车模块","alt":"风车模块","nro":15,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnoluj5z8j32520pmwvi.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"风车模块","attributes":{},"skip":false,"key":"7.3.1"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.2","level":"7.3","list_caption":"Figure: testimonials模块","alt":"testimonials模块","nro":16,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnoobj2wcj32580uunin.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"testimonials模块","attributes":{},"skip":false,"key":"7.3.2"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.3","level":"7.3","list_caption":"Figure: see more模块","alt":"see more模块","nro":17,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnox9lwmfj32520ky1kx.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"see more模块","attributes":{},"skip":false,"key":"7.3.3"}]},"title":"静态网站构建手册-使用Hugo构建博客","language":"zh-hans","links":{"sidebar":{"Jimmy Song":"https://jimmysong.io"}},"gitbook":"*","description":"静态网站构建手册-使用Hugo构建博客"},"file":{"path":"steps/seo.md","mtime":"2017-12-02T09:32:48.275Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-05-25T11:04:46.345Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -41,7 +41,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-ghcolors.css">
                 
             
                 
@@ -612,14 +612,14 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="../theme/beautifulhugo-overview.html">
+        <li class="chapter " data-level="6.1" data-path="../themes/beautifulhugo-overview.html">
             
-                <a href="../theme/beautifulhugo-overview.html">
+                <a href="../themes/beautifulhugo-overview.html">
             
                     
                         <b>6.1.</b>
                     
-                    BeautifulHugo主题使用说明
+                    BeautifulHugo主题概览
             
                 </a>
             
@@ -690,16 +690,68 @@
 
     
         
+        <li class="header">hugo-universal</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../themes/hugo-universal-overview.html">
+            
+                <a href="../themes/hugo-universal-overview.html">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    hugo-universal主题使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../themes/hugo-universal-templates.html">
+            
+                <a href="../themes/hugo-universal-templates.html">
+            
+                    
+                        <b>7.2.</b>
+                    
+                    hugo-universal主题模块说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../themes/hugo-universal-settings.html">
+            
+                <a href="../themes/hugo-universal-settings.html">
+            
+                    
+                        <b>7.3.</b>
+                    
+                    hugo-universal主题配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
         <li class="header">数据分析</li>
         
         
     
-        <li class="chapter " data-level="7.1" >
+        <li class="chapter " data-level="8.1" >
             
                 <span>
             
                     
-                        <b>7.1.</b>
+                        <b>8.1.</b>
                     
                     网站数据分析
             
@@ -709,12 +761,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" >
+        <li class="chapter " data-level="8.2" >
             
                 <span>
             
                     
-                        <b>7.2.</b>
+                        <b>8.2.</b>
                     
                     数据准备
             
@@ -724,12 +776,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.3" >
+        <li class="chapter " data-level="8.3" >
             
                 <span>
             
                     
-                        <b>7.3.</b>
+                        <b>8.3.</b>
                     
                     数据加工
             
@@ -739,12 +791,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.4" >
+        <li class="chapter " data-level="8.4" >
             
                 <span>
             
                     
-                        <b>7.4.</b>
+                        <b>8.4.</b>
                     
                     数据处理
             
@@ -754,12 +806,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.5" >
+        <li class="chapter " data-level="8.5" >
             
                 <span>
             
                     
-                        <b>7.5.</b>
+                        <b>8.5.</b>
                     
                     数据展示
             
@@ -776,12 +828,12 @@
         
         
     
-        <li class="chapter " data-level="8.1" >
+        <li class="chapter " data-level="9.1" >
             
                 <span>
             
                     
-                        <b>8.1.</b>
+                        <b>9.1.</b>
                     
                     后记
             
@@ -852,30 +904,30 @@ Algolia &#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x4E09;&#x79CD;&#x65B9;
 <p>&#x8981;&#x5B89;&#x88C5;<code>hugo-aligolia</code>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5148;&#x786E;&#x4FDD;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x4E86; npm &#x6216;&#x8005; yarn &#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;</p>
 </blockquote>
 <p>&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#x5373;&#x53EF;&#xFF1A;</p>
-<pre><code class="lang-shell">$ npm install hugo-algolia -g
+<pre class="language-"><code class="lang-bash">$ <span class="token function">npm</span> <span class="token function">install</span> hugo-algolia -g
 </code></pre>
 <p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5728;&#x6211;&#x4EEC; hugo &#x751F;&#x4EA7;&#x7684;&#x9759;&#x6001;&#x9875;&#x9762;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x9762;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;<code>config.yaml</code>&#x7684;&#x6587;&#x4EF6;(&#x548C;<code>config.toml</code>&#x540C;&#x7EA7;)&#xFF0C;&#x7136;&#x540E;&#x5728;<code>config.yaml</code>&#x6587;&#x4EF6;&#x4E2D;&#x6307;&#x5B9A; <code>Algolia</code>&#x76F8;&#x5173;&#x7684; API &#x6570;&#x636E;&#x3002;</p>
-<pre><code class="lang-yaml"><span class="hljs-meta">---</span>
-<span class="hljs-attr">baseurl:</span> <span class="hljs-string">&quot;/&quot;</span>
-<span class="hljs-attr">DefaultContentLanguage:</span> <span class="hljs-string">&quot;zh-cn&quot;</span>
-<span class="hljs-attr">hasCJKLanguage:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">languageCode:</span> <span class="hljs-string">&quot;zh-cn&quot;</span>
-<span class="hljs-attr">title:</span> <span class="hljs-string">&quot;River&apos;s Site&quot;</span>
-<span class="hljs-attr">theme:</span> <span class="hljs-string">&quot;beautifulhugo&quot;</span>
-<span class="hljs-attr">metaDataFormat:</span> <span class="hljs-string">&quot;yaml&quot;</span>
-<span class="hljs-attr">algolia:</span>
-<span class="hljs-attr">  index:</span> <span class="hljs-string">&quot;qikqiak-blog&quot;</span>
-<span class="hljs-attr">  key:</span> <span class="hljs-string">&quot;3f541d53f128036d7542f6f2362d4a67&quot;</span>
-<span class="hljs-attr">  appID:</span> <span class="hljs-string">&quot;XYLRNJ38SQ&quot;</span>
-<span class="hljs-meta">---</span>
+<pre class="language-"><code class="lang-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">baseurl</span><span class="token punctuation">:</span> <span class="token string">&quot;/&quot;</span>
+<span class="token key atrule">DefaultContentLanguage</span><span class="token punctuation">:</span> <span class="token string">&quot;zh-cn&quot;</span>
+<span class="token key atrule">hasCJKLanguage</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">languageCode</span><span class="token punctuation">:</span> <span class="token string">&quot;zh-cn&quot;</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token string">&quot;River&apos;s Site&quot;</span>
+<span class="token key atrule">theme</span><span class="token punctuation">:</span> <span class="token string">&quot;beautifulhugo&quot;</span>
+<span class="token key atrule">metaDataFormat</span><span class="token punctuation">:</span> <span class="token string">&quot;yaml&quot;</span>
+<span class="token key atrule">algolia</span><span class="token punctuation">:</span>
+  <span class="token key atrule">index</span><span class="token punctuation">:</span> <span class="token string">&quot;qikqiak-blog&quot;</span>
+  <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">&quot;3f541d53f128036d7542f6f2362d4a67&quot;</span>
+  <span class="token key atrule">appID</span><span class="token punctuation">:</span> <span class="token string">&quot;XYLRNJ38SQ&quot;</span>
+<span class="token punctuation">---</span>
 </code></pre>
 <blockquote>
 <p>API &#x76F8;&#x5173;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x524D;&#x5F80; dashboard &#x7684; <code>API Keys</code>&#x67E5;&#x770B;&#xFF0C;&#x6CE8;&#x610F;&#x4E0A;&#x9762;&#x7684;<code>key</code>&#x662F;<strong>Admin API Key</strong>&#x3002;</p>
 </blockquote>
 <p>&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#x4EE5;&#x540E;&#xFF0C;&#x5728;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x9762;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF1A;</p>
-<pre><code class="lang-shell">$ hugo-algolia -s
-JSON index file was created in public/algolia.json
-{ updatedAt: &apos;2018-02-23T02:36:09.480Z&apos;, taskID: 249063848950 }
+<pre class="language-"><code class="lang-bash">$ hugo-algolia -s
+JSON index <span class="token function">file</span> was created <span class="token keyword">in</span> public/algolia.json
+<span class="token punctuation">{</span> updatedAt: <span class="token string">&apos;2018-02-23T02:36:09.480Z&apos;</span>, taskID: 249063848950 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#x4F1A;&#x5728;<code>public</code>&#x76EE;&#x5F55;&#x4E0B;&#x9762;&#x751F;&#x6210;&#x4E00;&#x4E2A;<code>algolia.json</code>&#x7684;&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5728; dashboard &#x4E2D;&#x6253;&#x5F00; Indices&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5DF2;&#x7ECF;&#x6709;&#x51E0;&#x5341;&#x6761;&#x6570;&#x636E;&#x4E86;&#x3002;
 <img src="../images/algolia-index.png" alt="Indices"></p>
@@ -884,168 +936,168 @@ JSON index file was created in public/algolia.json
 </blockquote>
 <h2 id="&#x524D;&#x7AEF;">&#x524D;&#x7AEF;</h2>
 <p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5C06;&#x9700;&#x8981;&#x88AB;&#x641C;&#x7D22;&#x7684;&#x6587;&#x7AE0;&#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x6210;&#x529F;&#x63D0;&#x4EA4;&#x5230;<code>Algolia</code>&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x4E8B;&#x60C5;&#x5C31;&#x662F;&#x524D;&#x7AEF;&#x9875;&#x9762;&#x7684;&#x5C55;&#x793A;&#x4E86;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x4E3B;&#x9898;&#x6216;&#x8BB8;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x8BF7;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x4FEE;&#x6539;&#x3002;&#x6211;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x662F;<code>beautifulhugo</code>&#x4E3B;&#x9898;&#xFF0C;&#x5728;<code>themes/beautifulhugo/layouts/partials</code>&#x76EE;&#x5F55;&#x4E0B;&#x9762;&#x65B0;&#x589E;&#x6587;&#x4EF6;&#xFF1A;&#xFF08;<strong>search.html</strong>&#xFF09;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;aa-input-container&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;aa-input-container&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;aa-search-input&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;aa-input-search&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Search for titles or URIs...&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string">&quot;off&quot;</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;aa-input-icon&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;654 -372 1664 1664&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M1806,332c0-123.3-43.8-228.8-131.5-316.5C1586.8-72.2,1481.3-116,1358-116s-228.8,43.8-316.5,131.5  C953.8,103.2,910,208.7,910,332s43.8,228.8,131.5,316.5C1129.2,736.2,1234.7,780,1358,780s228.8-43.8,316.5-131.5  C1762.2,560.8,1806,455.3,1806,332z M2318,1164c0,34.7-12.7,64.7-38,90s-55.3,38-90,38c-36,0-66-12.7-90-38l-343-342  c-119.3,82.7-252.3,124-399,124c-95.3,0-186.5-18.5-273.5-55.5s-162-87-225-150s-113-138-150-225S654,427.3,654,332  s18.5-186.5,55.5-273.5s87-162,150-225s138-113,225-150S1262.7-372,1358-372s186.5,18.5,273.5,55.5s162,87,225,150s113,138,150,225  S2062,236.7,2062,332c0,146.7-41.3,279.7-124,399l343,343C2305.7,1098.7,2318,1128.7,2318,1164z&quot;</span> /&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;{{ &quot;</span><span class="hljs-string">https:</span>//<span class="hljs-attr">res.cloudinary.com</span>/<span class="hljs-attr">jimmysong</span>/<span class="hljs-attr">raw</span>/<span class="hljs-attr">upload</span>/<span class="hljs-attr">rootsongjc-hugo</span>/<span class="hljs-attr">algoliasearch.min.js</span>&quot; | <span class="hljs-attr">absURL</span> }}&quot;&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;{{ &quot;</span><span class="hljs-string">https:</span>//<span class="hljs-attr">res.cloudinary.com</span>/<span class="hljs-attr">jimmysong</span>/<span class="hljs-attr">raw</span>/<span class="hljs-attr">upload</span>/<span class="hljs-attr">rootsongjc-hugo</span>/<span class="hljs-attr">autocomplete.min.js</span>&quot; | <span class="hljs-attr">absURL</span> }}&quot;&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-<span class="hljs-keyword">var</span> client = algoliasearch(<span class="hljs-string">&quot;XYLRNJ38SQ&quot;</span>, <span class="hljs-string">&quot;3f541d53f128036d7542f6f2362d4a67&quot;</span>);
-<span class="hljs-keyword">var</span> index = client.initIndex(<span class="hljs-string">&apos;qikqiak-blog&apos;</span>);
-autocomplete(<span class="hljs-string">&apos;#aa-search-input&apos;</span>,
-{ hint: <span class="hljs-literal">false</span>}, {
-    source: autocomplete.sources.hits(index, {hitsPerPage: <span class="hljs-number">8</span>}),
-    displayKey: <span class="hljs-string">&apos;name&apos;</span>,
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>aa-input-container<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>aa-input-container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>search<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>aa-search-input<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>aa-input-search<span class="token punctuation">&quot;</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Search for titles or URIs...<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>search<span class="token punctuation">&quot;</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>aa-input-icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>654 -372 1664 1664<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M1806,332c0-123.3-43.8-228.8-131.5-316.5C1586.8-72.2,1481.3-116,1358-116s-228.8,43.8-316.5,131.5  C953.8,103.2,910,208.7,910,332s43.8,228.8,131.5,316.5C1129.2,736.2,1234.7,780,1358,780s228.8-43.8,316.5-131.5  C1762.2,560.8,1806,455.3,1806,332z M2318,1164c0,34.7-12.7,64.7-38,90s-55.3,38-90,38c-36,0-66-12.7-90-38l-343-342  c-119.3,82.7-252.3,124-399,124c-95.3,0-186.5-18.5-273.5-55.5s-162-87-225-150s-113-138-150-225S654,427.3,654,332  s18.5-186.5,55.5-273.5s87-162,150-225s138-113,225-150S1262.7-372,1358-372s186.5,18.5,273.5,55.5s162,87,225,150s113,138,150,225  S2062,236.7,2062,332c0,146.7-41.3,279.7-124,399l343,343C2305.7,1098.7,2318,1128.7,2318,1164z<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+&lt;script src=&quot;{{ &quot;https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/algoliasearch.min.js&quot; | absURL }}&quot;&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+&lt;script src=&quot;{{ &quot;https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/autocomplete.min.js&quot; | absURL }}&quot;&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+var client = algoliasearch(&quot;XYLRNJ38SQ&quot;, &quot;3f541d53f128036d7542f6f2362d4a67&quot;);
+var index = client.initIndex(&apos;qikqiak-blog&apos;);
+autocomplete(&apos;#aa-search-input&apos;,
+{ hint: false}, {
+    source: autocomplete.sources.hits(index, {hitsPerPage: 8}),
+    displayKey: &apos;name&apos;,
     templates: {
-        suggestion: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">suggestion</span>) </span>{
-            <span class="hljs-built_in">console</span>.log(suggestion);
-            <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;&lt;span&gt;&apos;</span> + <span class="hljs-string">&apos;&lt;a href=&quot;/post/&apos;</span> + suggestion.slug + <span class="hljs-string">&apos;&quot;&gt;&apos;</span> +
-            suggestion._highlightResult.title.value + <span class="hljs-string">&apos;&lt;/a&gt;&lt;/span&gt;&apos;</span>;
+        suggestion: function(suggestion) {
+            console.log(suggestion);
+            return &apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>&apos; + &apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>/post/<span class="token punctuation">&apos;</span> + suggestion.slug + <span class="token punctuation">&apos;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&apos; +
+            suggestion._highlightResult.title.value + &apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>&apos;;
         }
     }
 });
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <p>&#x6CE8;&#x610F;&#x4E0A;&#x9762; JS &#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> client = algoliasearch(<span class="hljs-string">&quot;XYLRNJ38SQ&quot;</span>, <span class="hljs-string">&quot;3f541d53f128036d7542f6f2362d4a67&quot;</span>);
-<span class="hljs-keyword">var</span> index = client.initIndex(<span class="hljs-string">&apos;qikqiak-blog&apos;</span>);
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> client <span class="token operator">=</span> <span class="token function">algoliasearch</span><span class="token punctuation">(</span><span class="token string">&quot;XYLRNJ38SQ&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;3f541d53f128036d7542f6f2362d4a67&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> index <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">initIndex</span><span class="token punctuation">(</span><span class="token string">&apos;qikqiak-blog&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <blockquote>
 <p>&#x5176;&#x4E2D;<code>algoliasearch</code>&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;<code>Application ID</code>&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;<code>Search-Only API Key</code>&#xFF0C;&#x4E0B;&#x9762;&#x7684;<code>initIndex</code>&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x4E3A;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7684;&#x7D22;&#x5F15;&#x540D;&#x79F0;<code>qikqiak-blog</code>&#x3002;</p>
 </blockquote>
 <p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x641C;&#x7D22;&#x5165;&#x53E3;&#x5373;&#x53EF;&#xFF0C;&#x5728;<code>themes/beautifulhugo/layouts/partials/nav.html</code>&#x6587;&#x4EF6;&#x6700;&#x4E0B;&#x9762;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;modalSearch&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal fade&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Search blog.qikqiak.com<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modalSearch<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal fade<span class="token punctuation">&quot;</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dialog<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal-dialog<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal-content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal-header<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>close<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-dismiss</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token entity" title="&#xD7;">&amp;times;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal-title<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Search blog.qikqiak.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal-body<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
             {{ partial &quot;search.html&quot; . }}
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal-footer<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>btn btn-default<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-dismiss</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>close<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <p>&#x5E76;&#x4E14;&#x5728;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x4E0B;&#x9762;&#xFF0C;&#x6DFB;&#x52A0;&#x641C;&#x7D22;&#x5165;&#x53E3;&#x6309;&#x94AE;
 &#x53EA;&#x8981;&#x5728;config.toml&#x6587;&#x4EF6;[Params]&#x91CC;&#x9762;&#x5E26;&#x6709;algolia = &quot;xxxxxxxxxxx&quot;&#xFF0C;&#x914D;&#x7F6E;&#x6309;&#x94AE;&#x7684;&#x914D;&#x7F6E;&#x5C31;&#x4F1A;&#x751F;&#x6548;&#x3002;</p>
-<pre><code class="lang-html">        {{ if isset .Site.Params &quot;gcse&quot; }}
-          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#modalSearch&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#modalSearch&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;outline: none;&quot;</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hidden-sm hidden-md hidden-lg&quot;</span>&gt;</span>{{ i18n &quot;gcseLabelShort&quot; }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;searchGlyph&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-search&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<pre class="language-"><code class="lang-html">        {{ if isset .Site.Params &quot;gcse&quot; }}
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#modalSearch<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-toggle</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#modalSearch<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">outline</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hidden-sm hidden-md hidden-lg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ i18n &quot;gcseLabelShort&quot; }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>searchGlyph<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>glyphicon glyphicon-search<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
         {{ end }}
 </code></pre>
-<pre><code class="lang-html">        {{ if isset .Site.Params &quot;algolia&quot; }}
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#modalSearch&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#modalSearch&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;outline: none;&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hidden-sm hidden-md hidden-lg&quot;</span>&gt;</span>{{ i18n &quot;gcseLabelShort&quot; }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;searchGlyph&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-search&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<pre class="language-"><code class="lang-html">        {{ if isset .Site.Params &quot;algolia&quot; }}
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#modalSearch<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-toggle</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#modalSearch<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">outline</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hidden-sm hidden-md hidden-lg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ i18n &quot;gcseLabelShort&quot; }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>searchGlyph<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>glyphicon glyphicon-search<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
         {{ end }}
 </code></pre>
 <p>&#x5176;&#x4E2D;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x5F15;&#x5165;&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x65B0;&#x5EFA;&#x7684;<code>search.html</code>&#x6587;&#x4EF6;&#x3002;&#x5269;&#x4E0B;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x4E9B;&#x7F8E;&#x5316;&#x641C;&#x7D22;&#x9875;&#x9762;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x65B0;&#x5EFA;<code>themes/beautifulhugo/static/css/search.css</code>&#x6587;&#x4EF6;&#xFF1A;</p>
-<pre><code class="lang-css">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;https://fonts.googleapis.com/css?family=Montserrat:400,700&apos;</span>;
-<span class="hljs-selector-class">.aa-input-container</span> {
-  <span class="hljs-attribute">display</span>: inline-block;
-  <span class="hljs-attribute">position</span>: relative;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-}
-<span class="hljs-selector-class">.aa-input-container</span> <span class="hljs-selector-tag">span</span>,<span class="hljs-selector-class">.aa-input-container</span> <span class="hljs-selector-tag">input</span> {
-    <span class="hljs-attribute">width</span>: inherit;
-}
-<span class="hljs-selector-class">.aa-input-search</span> {
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">12px</span> <span class="hljs-number">28px</span> <span class="hljs-number">12px</span> <span class="hljs-number">12px</span>;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-number">#e4e4e4</span>;
-  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
-  <span class="hljs-attribute">-webkit-transition</span>: .<span class="hljs-number">2s</span>;
-  <span class="hljs-attribute">transition</span>: .<span class="hljs-number">2s</span>;
-  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Montserrat&quot;</span>, sans-serif;
-  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">0</span> <span class="hljs-built_in">rgba</span>(241, 241, 241, 0.35);
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
-  <span class="hljs-attribute">box-sizing</span>: border-box;
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
-  <span class="hljs-attribute">-webkit-appearance</span>: none;
-  <span class="hljs-attribute">-moz-appearance</span>: none;
-  <span class="hljs-attribute">appearance</span>: none;
-}
-<span class="hljs-selector-class">.aa-input-search</span><span class="hljs-selector-pseudo">::-webkit-search-decoration</span>, <span class="hljs-selector-class">.aa-input-search</span><span class="hljs-selector-pseudo">::-webkit-search-cancel-button</span>, <span class="hljs-selector-class">.aa-input-search</span><span class="hljs-selector-pseudo">::-webkit-search-results-button</span>, <span class="hljs-selector-class">.aa-input-search</span><span class="hljs-selector-pseudo">::-webkit-search-results-decoration</span> {
-    <span class="hljs-attribute">display</span>: none;
-}
-<span class="hljs-selector-class">.aa-input-search</span><span class="hljs-selector-pseudo">:focus</span> {
-    <span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#3a96cf</span>;
-    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">0</span> <span class="hljs-built_in">rgba</span>(58, 150, 207, 0.1);
-}
-<span class="hljs-selector-class">.aa-input-icon</span> {
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">16px</span>;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">16px</span>;
-  <span class="hljs-attribute">position</span>: absolute;
-  <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
-  <span class="hljs-attribute">right</span>: <span class="hljs-number">16px</span>;
-  <span class="hljs-attribute">-webkit-transform</span>: <span class="hljs-built_in">translateY</span>(-50%);
-          <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(-50%);
-  <span class="hljs-attribute">fill</span>: <span class="hljs-number">#e4e4e4</span>;
-}
-<span class="hljs-selector-class">.aa-hint</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#e4e4e4</span>;
-}
-<span class="hljs-selector-class">.aa-dropdown-menu</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-built_in">rgba</span>(228, 228, 228, 0.6);
-  <span class="hljs-attribute">border-top-width</span>: <span class="hljs-number">1px</span>;
-  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Montserrat&quot;</span>, sans-serif;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
-  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">10px</span>;
-  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">0</span> <span class="hljs-built_in">rgba</span>(241, 241, 241, 0.35);
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">11px</span>;
-  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
-  <span class="hljs-attribute">box-sizing</span>: border-box;
-}
-<span class="hljs-selector-class">.aa-suggestion</span> {
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">12px</span>;
-  <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-built_in">rgba</span>(228, 228, 228, 0.6);
-  <span class="hljs-attribute">cursor</span>: pointer;
-  <span class="hljs-attribute">-webkit-transition</span>: .<span class="hljs-number">2s</span>;
-  <span class="hljs-attribute">transition</span>: .<span class="hljs-number">2s</span>;
-  <span class="hljs-attribute">display</span>: -webkit-box;
-  <span class="hljs-attribute">display</span>: -ms-flexbox;
-  <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">-webkit-box-pack</span>: justify;
-      <span class="hljs-attribute">-ms-flex-pack</span>: justify;
-          <span class="hljs-attribute">justify-content</span>: space-between;
-  <span class="hljs-attribute">-webkit-box-align</span>: center;
-      <span class="hljs-attribute">-ms-flex-align</span>: center;
-          <span class="hljs-attribute">align-items</span>: center;
-}
-<span class="hljs-selector-class">.aa-suggestion</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.aa-suggestion</span><span class="hljs-selector-class">.aa-cursor</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(241, 241, 241, 0.35);
-}
-<span class="hljs-selector-class">.aa-suggestion</span> &gt; <span class="hljs-selector-tag">span</span><span class="hljs-selector-pseudo">:first-child</span> {
-    <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
-}
-<span class="hljs-selector-class">.aa-suggestion</span> &gt; <span class="hljs-selector-tag">span</span><span class="hljs-selector-pseudo">:last-child</span> {
-    <span class="hljs-attribute">text-transform</span>: uppercase;
-    <span class="hljs-attribute">color</span>: <span class="hljs-number">#a9a9a9</span>;
-}
-<span class="hljs-selector-class">.aa-suggestion</span> &gt; <span class="hljs-selector-tag">span</span><span class="hljs-selector-pseudo">:first-child</span> <span class="hljs-selector-tag">em</span>, <span class="hljs-selector-class">.aa-suggestion</span> &gt; <span class="hljs-selector-tag">span</span><span class="hljs-selector-pseudo">:last-child</span> <span class="hljs-selector-tag">em</span> {
-  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
-  <span class="hljs-attribute">font-style</span>: normal;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(58, 150, 207, 0.1);
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">2px</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-number">2px</span>;
-}
+<pre class="language-"><code class="lang-css"><span class="token atrule"><span class="token rule">@import</span> <span class="token string">&apos;https://fonts.googleapis.com/css?family=Montserrat:400,700&apos;</span><span class="token punctuation">;</span></span>
+<span class="token selector">.aa-input-container</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-input-container span,.aa-input-container input</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-input-search</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 12px 28px 12px 12px<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 2px solid #e4e4e4<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition</span><span class="token punctuation">:</span> .2s<span class="token punctuation">;</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> .2s<span class="token punctuation">;</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Montserrat&quot;</span>, sans-serif<span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 4px 4px 0 <span class="token function">rgba</span><span class="token punctuation">(</span>241, 241, 241, 0.35<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 11px<span class="token punctuation">;</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+  <span class="token property">-webkit-appearance</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">-moz-appearance</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">appearance</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-input-search::-webkit-search-decoration, .aa-input-search::-webkit-search-cancel-button, .aa-input-search::-webkit-search-results-button, .aa-input-search::-webkit-search-results-decoration</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-input-search:focus</span> <span class="token punctuation">{</span>
+    <span class="token property">outline</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span> #3a96cf<span class="token punctuation">;</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> 4px 4px 0 <span class="token function">rgba</span><span class="token punctuation">(</span>58, 150, 207, 0.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-input-icon</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">fill</span><span class="token punctuation">:</span> #e4e4e4<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-hint</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #e4e4e4<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-dropdown-menu</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 2px solid <span class="token function">rgba</span><span class="token punctuation">(</span>228, 228, 228, 0.6<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">border-top-width</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Montserrat&quot;</span>, sans-serif<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 4px 4px 0 <span class="token function">rgba</span><span class="token punctuation">(</span>241, 241, 241, 0.35<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 11px<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-suggestion</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+  <span class="token property">border-top</span><span class="token punctuation">:</span> 1px solid <span class="token function">rgba</span><span class="token punctuation">(</span>228, 228, 228, 0.6<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition</span><span class="token punctuation">:</span> .2s<span class="token punctuation">;</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> .2s<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> -webkit-box<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> -ms-flexbox<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">-webkit-box-pack</span><span class="token punctuation">:</span> justify<span class="token punctuation">;</span>
+      <span class="token property">-ms-flex-pack</span><span class="token punctuation">:</span> justify<span class="token punctuation">;</span>
+          <span class="token property">justify-content</span><span class="token punctuation">:</span> space-between<span class="token punctuation">;</span>
+  <span class="token property">-webkit-box-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+      <span class="token property">-ms-flex-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+          <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-suggestion:hover, .aa-suggestion.aa-cursor</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>241, 241, 241, 0.35<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-suggestion &gt; span:first-child</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-suggestion &gt; span:last-child</span> <span class="token punctuation">{</span>
+    <span class="token property">text-transform</span><span class="token punctuation">:</span> uppercase<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #a9a9a9<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.aa-suggestion &gt; span:first-child em, .aa-suggestion &gt; span:last-child em</span> <span class="token punctuation">{</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+  <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>58, 150, 207, 0.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 2px 0 2px 2px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>&#x5F53;&#x7136;&#x8FD8;&#x5F97;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x5F15;&#x5165;&#x4E0A;&#x9762;&#x7684; CSS &#x6837;&#x5F0F;&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x6587;&#x4EF6;<code>themes/beautifulhugo/layouts/partials/head.html</code>&#x7684;<strong>head</strong>&#x533A;&#x57DF;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{{ &quot;</span><span class="hljs-string">css</span>/<span class="hljs-attr">search.css</span>&quot; | <span class="hljs-attr">absURL</span> }}&quot; /&gt;</span>
+<pre class="language-"><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;{{ &quot;css/search.css&quot; | absURL }}&quot; /&gt;
 </code></pre>
 <h2 id="&#x641C;&#x7D22;">&#x641C;&#x7D22;</h2>
 <p>&#x4E0A;&#x9762;&#x7684;&#x6240;&#x6709;&#x5DE5;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x9759;&#x6001;&#x9875;&#x9762;&#xFF0C;&#x66F4;&#x65B0;&#x7F51;&#x7AD9;&#x6570;&#x636E;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5BFC;&#x822A;&#x680F;&#x6700;&#x53F3;&#x8FB9;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x641C;&#x7D22;&#x6309;&#x94AE;&#x4E86;&#x3002;
@@ -1058,7 +1110,7 @@ autocomplete(<span class="hljs-string">&apos;#aa-search-input&apos;</span>,
 <li><a href="https://blog.qikqiak.com/post/hugo-integrated-algolia-search/" target="_blank">https://blog.qikqiak.com/post/hugo-integrated-algolia-search/</a></li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; jimmysong.io 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated: 
-2018-02-26 15:55:42
+2018-05-25 19:03:13
 </span></footer>
                                 
                                 </section>
@@ -1102,7 +1154,7 @@ autocomplete(<span class="hljs-string">&apos;#aa-search-input&apos;</span>,
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"站内搜索插件","level":"5.9","depth":1,"next":{"title":"网站评论插件","level":"5.10","depth":1,"path":"steps/comment-plugin.md","ref":"steps/comment-plugin.md","articles":[]},"previous":{"title":"网站统计工具","level":"5.8","depth":1,"path":"steps/web-analytics-plugin.md","ref":"steps/web-analytics-plugin.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","image-captions","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © jimmysong.io 2017","modify_label":"Updated: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/rootsongjc/hugo-handbook"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/rootsongjc/hugo-handbook/blob/master/"},"splitter":{},"codesnippet":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"page-toc-button":{},"back-to-top-button":{},"github-buttons":{"repo":"rootsongjc/hugo-handbook","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"11f7d254cfa4e0ca44b175c66d379ecc"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{},"image-captions":{"caption":"图片 - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Jimmy Song","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"steps/dns-setup.html#fig5.4.1","level":"5.4","list_caption":"Figure: Cloudflare页面","alt":"Cloudflare页面","nro":1,"url":"../images/dns-jimmysong-cloudflare.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Cloudflare页面","attributes":{},"skip":false,"key":"5.4.1"},{"backlink":"steps/env-setup.html#fig5.5.1","level":"5.5","list_caption":"Figure: 网站技术栈","alt":"网站技术栈","nro":2,"url":"../images/jimmysong-io-web-stack.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"网站技术栈","attributes":{},"skip":false,"key":"5.5.1"},{"backlink":"steps/static-file-storage.html#fig5.7.1","level":"5.7","list_caption":"Figure: 七牛云对象存储页面","alt":"七牛云对象存储页面","nro":3,"url":"../images/qiniu-storage-bucket.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"七牛云对象存储页面","attributes":{},"skip":false,"key":"5.7.1"},{"backlink":"steps/static-file-storage.html#fig5.7.2","level":"5.7","list_caption":"Figure: 七牛云存储文件管理页面","alt":"七牛云存储文件管理页面","nro":4,"url":"../images/qiniu-storage-content-management.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"七牛云存储文件管理页面","attributes":{},"skip":false,"key":"5.7.2"},{"backlink":"steps/static-file-storage.html#fig5.7.3","level":"5.7","list_caption":"Figure: Cloudniary媒体库","alt":"Cloudniary媒体库","nro":5,"url":"../images/cloudinary-media-library.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"Cloudniary媒体库","attributes":{},"skip":false,"key":"5.7.3"},{"backlink":"steps/static-file-storage.html#fig5.7.4","level":"5.7","list_caption":"Figure: 图片详情页面","alt":"图片详情页面","nro":6,"url":"../images/cloudinary-media-library-image-detail.jpg","index":4,"caption_template":"图片 - _CAPTION_","label":"图片详情页面","attributes":{},"skip":false,"key":"5.7.4"},{"backlink":"steps/security.html#fig5.12.1","level":"5.12","list_caption":"Figure: 运营商劫持","alt":"运营商劫持","nro":7,"url":"https://res.cloudinary.com/jimmysong/image/upload/images/operator-dns-hijacking-ad.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"运营商劫持","attributes":{},"skip":false,"key":"5.12.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.1","level":"5.13","list_caption":"Figure: jimmysong.io","alt":"jimmysong.io","nro":8,"url":"../images/ping-pe-jimmysong.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"jimmysong.io","attributes":{},"skip":false,"key":"5.13.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.2","level":"5.13","list_caption":"Figure: Grafana中监控的jimmysong.io","alt":"Grafana中监控的jimmysong.io","nro":9,"url":"../images/grafana-wordping-jimmysong.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"Grafana中监控的jimmysong.io","attributes":{},"skip":false,"key":"5.13.2"},{"backlink":"steps/seo.html#fig5.14.1","level":"5.14","list_caption":"Figure: Google webmaster页面","alt":"Google webmaster页面","nro":10,"url":"../images/google-search-console-404-errors.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Google webmaster页面","attributes":{},"skip":false,"key":"5.14.1"},{"backlink":"steps/seo.html#fig5.14.2","level":"5.14","list_caption":"Figure: SEO checklist","alt":"SEO checklist","nro":11,"url":"../images/seo-checklist.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"SEO checklist","attributes":{},"skip":false,"key":"5.14.2"},{"backlink":"steps/custom-email-server.html#fig5.15.1","level":"5.15","list_caption":"Figure: Mac邮箱客户端配置","alt":"Mac邮箱客户端配置","nro":12,"url":"../images/mail-account-setting.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Mac邮箱客户端配置","attributes":{},"skip":false,"key":"5.15.1"},{"backlink":"steps/custom-email-server.html#fig5.15.2","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":13,"url":"../images/ios-mail-account1.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.2"},{"backlink":"steps/custom-email-server.html#fig5.15.3","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":14,"url":"../images/ios-mail-account2.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.3"}]},"title":"静态网站构建手册-使用Hugo构建博客","language":"zh-hans","links":{"sidebar":{"Jimmy Song":"https://jimmysong.io"}},"gitbook":"*","description":"静态网站构建手册-使用Hugo构建博客"},"file":{"path":"steps/searching-plugin.md","mtime":"2018-02-26T07:55:42.719Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-06T02:22:05.533Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"站内搜索插件","level":"5.9","depth":1,"next":{"title":"网站评论插件","level":"5.10","depth":1,"path":"steps/comment-plugin.md","ref":"steps/comment-plugin.md","articles":[]},"previous":{"title":"网站统计工具","level":"5.8","depth":1,"path":"steps/web-analytics-plugin.md","ref":"steps/web-analytics-plugin.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","image-captions","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default","-highlight","prism","prism-themes"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © jimmysong.io 2017","modify_label":"Updated: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-ghcolors.css"]},"github":{"url":"https://github.com/rootsongjc/hugo-handbook"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/rootsongjc/hugo-handbook/blob/master/"},"splitter":{},"codesnippet":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"page-toc-button":{},"back-to-top-button":{},"prism-themes":{},"github-buttons":{"repo":"rootsongjc/hugo-handbook","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"11f7d254cfa4e0ca44b175c66d379ecc"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{},"image-captions":{"caption":"图片 - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Jimmy Song","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"steps/dns-setup.html#fig5.4.1","level":"5.4","list_caption":"Figure: Cloudflare页面","alt":"Cloudflare页面","nro":1,"url":"../images/dns-jimmysong-cloudflare.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Cloudflare页面","attributes":{},"skip":false,"key":"5.4.1"},{"backlink":"steps/env-setup.html#fig5.5.1","level":"5.5","list_caption":"Figure: 网站技术栈","alt":"网站技术栈","nro":2,"url":"../images/jimmysong-io-web-stack.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"网站技术栈","attributes":{},"skip":false,"key":"5.5.1"},{"backlink":"steps/static-file-storage.html#fig5.7.1","level":"5.7","list_caption":"Figure: 七牛云对象存储页面","alt":"七牛云对象存储页面","nro":3,"url":"../images/qiniu-storage-bucket.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"七牛云对象存储页面","attributes":{},"skip":false,"key":"5.7.1"},{"backlink":"steps/static-file-storage.html#fig5.7.2","level":"5.7","list_caption":"Figure: 七牛云存储文件管理页面","alt":"七牛云存储文件管理页面","nro":4,"url":"../images/qiniu-storage-content-management.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"七牛云存储文件管理页面","attributes":{},"skip":false,"key":"5.7.2"},{"backlink":"steps/static-file-storage.html#fig5.7.3","level":"5.7","list_caption":"Figure: Cloudniary媒体库","alt":"Cloudniary媒体库","nro":5,"url":"../images/cloudinary-media-library.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"Cloudniary媒体库","attributes":{},"skip":false,"key":"5.7.3"},{"backlink":"steps/static-file-storage.html#fig5.7.4","level":"5.7","list_caption":"Figure: 图片详情页面","alt":"图片详情页面","nro":6,"url":"../images/cloudinary-media-library-image-detail.jpg","index":4,"caption_template":"图片 - _CAPTION_","label":"图片详情页面","attributes":{},"skip":false,"key":"5.7.4"},{"backlink":"steps/security.html#fig5.12.1","level":"5.12","list_caption":"Figure: 运营商劫持","alt":"运营商劫持","nro":7,"url":"https://res.cloudinary.com/jimmysong/image/upload/images/operator-dns-hijacking-ad.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"运营商劫持","attributes":{},"skip":false,"key":"5.12.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.1","level":"5.13","list_caption":"Figure: jimmysong.io","alt":"jimmysong.io","nro":8,"url":"../images/ping-pe-jimmysong.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"jimmysong.io","attributes":{},"skip":false,"key":"5.13.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.2","level":"5.13","list_caption":"Figure: Grafana中监控的jimmysong.io","alt":"Grafana中监控的jimmysong.io","nro":9,"url":"../images/grafana-wordping-jimmysong.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"Grafana中监控的jimmysong.io","attributes":{},"skip":false,"key":"5.13.2"},{"backlink":"steps/seo.html#fig5.14.1","level":"5.14","list_caption":"Figure: Google webmaster页面","alt":"Google webmaster页面","nro":10,"url":"../images/google-search-console-404-errors.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Google webmaster页面","attributes":{},"skip":false,"key":"5.14.1"},{"backlink":"steps/seo.html#fig5.14.2","level":"5.14","list_caption":"Figure: SEO checklist","alt":"SEO checklist","nro":11,"url":"../images/seo-checklist.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"SEO checklist","attributes":{},"skip":false,"key":"5.14.2"},{"backlink":"steps/custom-email-server.html#fig5.15.1","level":"5.15","list_caption":"Figure: Mac邮箱客户端配置","alt":"Mac邮箱客户端配置","nro":12,"url":"../images/mail-account-setting.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Mac邮箱客户端配置","attributes":{},"skip":false,"key":"5.15.1"},{"backlink":"steps/custom-email-server.html#fig5.15.2","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":13,"url":"../images/ios-mail-account1.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.2"},{"backlink":"steps/custom-email-server.html#fig5.15.3","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":14,"url":"../images/ios-mail-account2.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.3"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.1","level":"7.3","list_caption":"Figure: 风车模块","alt":"风车模块","nro":15,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnoluj5z8j32520pmwvi.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"风车模块","attributes":{},"skip":false,"key":"7.3.1"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.2","level":"7.3","list_caption":"Figure: testimonials模块","alt":"testimonials模块","nro":16,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnoobj2wcj32580uunin.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"testimonials模块","attributes":{},"skip":false,"key":"7.3.2"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.3","level":"7.3","list_caption":"Figure: see more模块","alt":"see more模块","nro":17,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnox9lwmfj32520ky1kx.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"see more模块","attributes":{},"skip":false,"key":"7.3.3"}]},"title":"静态网站构建手册-使用Hugo构建博客","language":"zh-hans","links":{"sidebar":{"Jimmy Song":"https://jimmysong.io"}},"gitbook":"*","description":"静态网站构建手册-使用Hugo构建博客"},"file":{"path":"steps/searching-plugin.md","mtime":"2018-05-25T11:03:13.264Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-05-25T11:04:46.345Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
