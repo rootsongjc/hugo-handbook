@@ -19,7 +19,7 @@ Algolia 为我们提供了三种方式来增加记录：手动添加、上传 js
 > 要安装`hugo-aligolia`我们需要先确保我们已经安装了 npm 或者 yarn 包管理工具。
 
 使用下面的命令安装即可：
-```shell
+```bash
 $ npm install hugo-algolia -g
 ```
 
@@ -43,7 +43,7 @@ algolia:
 > API 相关数据可以前往 dashboard 的 `API Keys`查看，注意上面的`key`是**Admin API Key**。
 
 配置完成以后，在根目录下面执行下面的命令：
-```shell
+```bash
 $ hugo-algolia -s
 JSON index file was created in public/algolia.json
 { updatedAt: '2018-02-23T02:36:09.480Z', taskID: 249063848950 }

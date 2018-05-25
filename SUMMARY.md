@@ -51,12 +51,17 @@
 
 ### BeautifulHugo
 
-- [BeautifulHugo主题使用说明](theme/beautifulhugo-overview.md)
+- [BeautifulHugo主题概览](themes/beautifulhugo-overview.md)
 - [主题发展历程]()
 - [主题配置]()
 - [插件说明]()
 - [问题记录]()
 
+### hugo-universal
+
+- [hugo-universal主题使用说明](themes/hugo-universal-overview.md)
+- [hugo-universal主题模块说明](themes/hugo-universal-templates.md)
+- [hugo-universal主题配置说明](themes/hugo-universal-settings.md)
 
 ### 数据分析
 
