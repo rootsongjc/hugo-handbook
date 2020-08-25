@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>hugo-universal主题模块说明 · 静态网站构建手册-使用Hugo构建博客</title>
+        <title>hugo-universal主题模块说明 · Hugo 静态网站构建手册</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
-        <meta name="author" content="Jimmy Song">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="宋净超（Jimmy Song）">
         
         
     
@@ -127,7 +127,7 @@
     
         
         <li>
-            <a href="https://jimmysong.io" target="_blank" class="custom-link">Jimmy Song</a>
+            <a href="https://jimmysong.io" target="_blank" class="custom-link">回到主页</a>
         </li>
     
     
@@ -890,160 +890,160 @@
                                 
                                 <h1 id="hugo-universal&#x4E3B;&#x9898;&#x6A21;&#x5757;&#x8BF4;&#x660E;">hugo-universal&#x4E3B;&#x9898;&#x6A21;&#x5757;&#x8BF4;&#x660E;</h1>
 <p>&#x4F7F;&#x7528;&#x8BE5;&#x4E3B;&#x9898;&#x7684;&#x7F51;&#x7AD9;&#x7684;<code>config.toml</code>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF08;&#x4EE5;<a href="https://servicemesher.github.io/" target="_blank">https://servicemesher.github.io/</a>&#x4E3A;&#x793A;&#x4F8B;&#xFF09;&#xFF1A;</p>
-<pre class="language-"><code class="lang-toml"># &#x7F51;&#x7AD9;&#x7684;&#x6839;URL
-baseurl = &quot;https://servicemesher.github.io/&quot;
-# &#x9996;&#x9875;&#x7684;&#x6807;&#x9898;
-title = &quot;ServiceMesher&quot;
-# &#x8BBE;&#x7F6E;&#x4F7F;&#x7528;&#x7684;&#x4E3B;&#x9898;
-theme = &quot;hugo-universal-theme&quot;
-# &#x8BBE;&#x7F6E;&#x7F51;&#x7AD9;&#x9ED8;&#x8BA4;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x8BED;&#x8A00;&#x7FFB;&#x8BD1;&#x6587;&#x4EF6;&#x5728;i18n&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x4E8E;&#x6B64;&#x5904;&#x914D;&#x7F6E;&#x7684;&#x8BED;&#x8A00;&#x4EE3;&#x7801;&#x76F8;&#x540C;
-languageCode = &quot;zh&quot;
-defaultContentLanguage = &quot;zh&quot;
-# &#x503C;&#x4E3A;&#x7A7A;&#x7684;&#x8BDD;&#x5219;&#x4E0D;&#x542F;&#x7528;disqus&#xFF0C;&#x56E0;&#x4E3A;&#x9700;&#x8981;&#x7FFB;&#x5899;&#x624D;&#x80FD;&#x8BBF;&#x95EE;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4E0D;&#x542F;&#x7528;
-disqusShortname = &quot;&quot;
-# &#x53D6;&#x6D88;&#x9ED8;&#x8BA4;&#x7684;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;prism&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;
-pygmentsUseClasses = false
-pygmentCodeFences = true
+<pre class="language-"><code class="lang-toml"><span class="token comment"># &#x7F51;&#x7AD9;&#x7684;&#x6839;URL</span>
+<span class="token key property">baseurl</span> <span class="token punctuation">=</span> <span class="token string">&quot;https://servicemesher.github.io/&quot;</span>
+<span class="token comment"># &#x9996;&#x9875;&#x7684;&#x6807;&#x9898;</span>
+<span class="token key property">title</span> <span class="token punctuation">=</span> <span class="token string">&quot;ServiceMesher&quot;</span>
+<span class="token comment"># &#x8BBE;&#x7F6E;&#x4F7F;&#x7528;&#x7684;&#x4E3B;&#x9898;</span>
+<span class="token key property">theme</span> <span class="token punctuation">=</span> <span class="token string">&quot;hugo-universal-theme&quot;</span>
+<span class="token comment"># &#x8BBE;&#x7F6E;&#x7F51;&#x7AD9;&#x9ED8;&#x8BA4;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x8BED;&#x8A00;&#x7FFB;&#x8BD1;&#x6587;&#x4EF6;&#x5728;i18n&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x4E8E;&#x6B64;&#x5904;&#x914D;&#x7F6E;&#x7684;&#x8BED;&#x8A00;&#x4EE3;&#x7801;&#x76F8;&#x540C;</span>
+<span class="token key property">languageCode</span> <span class="token punctuation">=</span> <span class="token string">&quot;zh&quot;</span>
+<span class="token key property">defaultContentLanguage</span> <span class="token punctuation">=</span> <span class="token string">&quot;zh&quot;</span>
+<span class="token comment"># &#x503C;&#x4E3A;&#x7A7A;&#x7684;&#x8BDD;&#x5219;&#x4E0D;&#x542F;&#x7528;disqus&#xFF0C;&#x56E0;&#x4E3A;&#x9700;&#x8981;&#x7FFB;&#x5899;&#x624D;&#x80FD;&#x8BBF;&#x95EE;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4E0D;&#x542F;&#x7528;</span>
+<span class="token key property">disqusShortname</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>
+<span class="token comment"># &#x53D6;&#x6D88;&#x9ED8;&#x8BA4;&#x7684;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;prism&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;</span>
+<span class="token key property">pygmentsUseClasses</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+<span class="token key property">pygmentCodeFences</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
 
-# &#x6BCF;&#x9875;&#x663E;&#x793A;&#x7684;&#x6587;&#x7AE0;&#x6570;&#x91CF;&#x7528;&#x4E8E;&#x5206;&#x9875;
-paginate = 10
+<span class="token comment"># &#x6BCF;&#x9875;&#x663E;&#x793A;&#x7684;&#x6587;&#x7AE0;&#x6570;&#x91CF;&#x7528;&#x4E8E;&#x5206;&#x9875;</span>
+<span class="token key property">paginate</span> <span class="token punctuation">=</span> <span class="token number">10</span>
 
-[menu]
+<span class="token punctuation">[</span><span class="token table class-name">menu</span><span class="token punctuation">]</span>
 
-# &#x677F;&#x5757;&#x5316;&#x5206;
-# &#x6743;&#x91CD;&#x5BF9;&#x5E94;&#x5728;&#x9875;&#x9762;&#x4E0A;&#x663E;&#x793A;&#x7684;&#x6B21;&#x5E8F;
+<span class="token comment"># &#x677F;&#x5757;&#x5316;&#x5206;</span>
+<span class="token comment"># &#x6743;&#x91CD;&#x5BF9;&#x5E94;&#x5728;&#x9875;&#x9762;&#x4E0A;&#x663E;&#x793A;&#x7684;&#x6B21;&#x5E8F;</span>
 
-[[menu.main]]
-    name = &quot;&#x4E3B;&#x9875;&quot;
-    url  = &quot;/&quot;
-    weight = 1
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">menu.main</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x4E3B;&#x9875;&quot;</span>
+    <span class="token key property">url</span>  <span class="token punctuation">=</span> <span class="token string">&quot;/&quot;</span>
+    <span class="token key property">weight</span> <span class="token punctuation">=</span> <span class="token number">1</span>
 
-[[menu.main]]
-    name = &quot;&#x535A;&#x5BA2;&quot;
-    url  = &quot;/blog/&quot;
-    weight = 2
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">menu.main</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x535A;&#x5BA2;&quot;</span>
+    <span class="token key property">url</span>  <span class="token punctuation">=</span> <span class="token string">&quot;/blog/&quot;</span>
+    <span class="token key property">weight</span> <span class="token punctuation">=</span> <span class="token number">2</span>
 
-[[menu.main]]
-    name = &quot;&#x6D3B;&#x52A8;&quot;
-    identifier = &quot;activity&quot;
-    url  = &quot;/activity/&quot;
-    weight = 3
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">menu.main</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x6D3B;&#x52A8;&quot;</span>
+    <span class="token key property">identifier</span> <span class="token punctuation">=</span> <span class="token string">&quot;activity&quot;</span>
+    <span class="token key property">url</span>  <span class="token punctuation">=</span> <span class="token string">&quot;/activity/&quot;</span>
+    <span class="token key property">weight</span> <span class="token punctuation">=</span> <span class="token number">3</span>
 
-[[menu.main]]
-    name=&quot;&#x9EC4;&#x9875;&quot;
-    url = &quot;/awesome-servicemesh/&quot;
-    weight = 4
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">menu.main</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token key property">name</span><span class="token punctuation">=</span><span class="token string">&quot;&#x9EC4;&#x9875;&quot;</span>
+    <span class="token key property">url</span> <span class="token punctuation">=</span> <span class="token string">&quot;/awesome-servicemesh/&quot;</span>
+    <span class="token key property">weight</span> <span class="token punctuation">=</span> <span class="token number">4</span>
 
-[[menu.main]]
-    name = &quot;&#x8054;&#x7CFB;&#x6211;&#x4EEC;&quot;
-    url  = &quot;/contact/&quot;
-    weight = 5
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">menu.main</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x8054;&#x7CFB;&#x6211;&#x4EEC;&quot;</span>
+    <span class="token key property">url</span>  <span class="token punctuation">=</span> <span class="token string">&quot;/contact/&quot;</span>
+    <span class="token key property">weight</span> <span class="token punctuation">=</span> <span class="token number">5</span>
 
-# &#x9876;&#x680F;&#xFF0C;&#x53EF;&#x9009;&#x62E9;&#x663E;&#x793A;
+<span class="token comment"># &#x9876;&#x680F;&#xFF0C;&#x53EF;&#x9009;&#x62E9;&#x663E;&#x793A;</span>
 
-[[menu.topbar]]
-    weight = 1
-    name = &quot;GitHub&quot;
-    url = &quot;https://github.com/servicemesher&quot;
-    pre = &quot;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>fa fa-2x fa-github<span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>&quot;
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">menu.topbar</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token key property">weight</span> <span class="token punctuation">=</span> <span class="token number">1</span>
+    <span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">&quot;GitHub&quot;</span>
+    <span class="token key property">url</span> <span class="token punctuation">=</span> <span class="token string">&quot;https://github.com/servicemesher&quot;</span>
+    <span class="token key property">pre</span> <span class="token punctuation">=</span> <span class="token string">&quot;&lt;i class=&apos;fa fa-2x fa-github&apos;&gt;&lt;/i&gt;&quot;</span>
 
-[[menu.topbar]]
-    weight = 4
-    name = &quot;Email&quot;
-    url = &quot;mailto:jimmysong@jimmysong.io&quot;
-    pre = &quot;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>fa fa-2x fa-envelope<span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>&quot;
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">menu.topbar</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token key property">weight</span> <span class="token punctuation">=</span> <span class="token number">4</span>
+    <span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">&quot;Email&quot;</span>
+    <span class="token key property">url</span> <span class="token punctuation">=</span> <span class="token string">&quot;mailto:jimmysong@jimmysong.io&quot;</span>
+    <span class="token key property">pre</span> <span class="token punctuation">=</span> <span class="token string">&quot;&lt;i class=&apos;fa fa-2x fa-envelope&apos;&gt;&lt;/i&gt;&quot;</span>
 
-# &#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;HTML&#x4E2D;&#x53EF;&#x4EE5;&#x5F15;&#x7528;
-[params]
-    viewMorePostLink = &quot;/blog/&quot;
-    author = &quot;ServiceMesher&quot;
-    # &#x6587;&#x7AE0;&#x9ED8;&#x8BA4;&#x7684;SEO&#x8BBE;&#x7F6E;
-    defaultKeywords = [&quot;service mesh&quot;]
-    defaultDescription = &quot;Service Mesh&#x7231;&#x597D;&#x8005;&#x7F51;&#x7AD9;&quot;
+<span class="token comment"># &#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;HTML&#x4E2D;&#x53EF;&#x4EE5;&#x5F15;&#x7528;</span>
+<span class="token punctuation">[</span><span class="token table class-name">params</span><span class="token punctuation">]</span>
+    <span class="token key property">viewMorePostLink</span> <span class="token punctuation">=</span> <span class="token string">&quot;/blog/&quot;</span>
+    <span class="token key property">author</span> <span class="token punctuation">=</span> <span class="token string">&quot;ServiceMesher&quot;</span>
+    <span class="token comment"># &#x6587;&#x7AE0;&#x9ED8;&#x8BA4;&#x7684;SEO&#x8BBE;&#x7F6E;</span>
+    <span class="token key property">defaultKeywords</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;service mesh&quot;</span><span class="token punctuation">]</span>
+    <span class="token key property">defaultDescription</span> <span class="token punctuation">=</span> <span class="token string">&quot;Service Mesh&#x7231;&#x597D;&#x8005;&#x7F51;&#x7AD9;&quot;</span>
 
-    # &#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x770B;&#x5230;&#x6BCF;&#x4E00;&#x9875;&#x7684;&#x540E;&#x7F00;&#xFF0C;&#x4E0E;&#x539F;&#x6587;&#x6807;&#x9898;&#x4F7F;&#x7528;&#xB7;&#x5206;&#x9694;
-    description = &quot;Service Mesh&#x7231;&#x597D;&#x8005;&quot;
-    # &#x7559;&#x7A7A;&#xFF0C;&#x4E0D;&#x542F;&#x7528;&#x8C37;&#x6B4C;&#x5730;&#x56FE;
-    googleMapsApiKey = &quot;&quot;
-    # Baidu&#x7EDF;&#x8BA1;&#x7684;token
-    baiduKey=&quot;761ec5e305f799778975c1f71c47a520&quot;
+    <span class="token comment"># &#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x770B;&#x5230;&#x6BCF;&#x4E00;&#x9875;&#x7684;&#x540E;&#x7F00;&#xFF0C;&#x4E0E;&#x539F;&#x6587;&#x6807;&#x9898;&#x4F7F;&#x7528;&#xB7;&#x5206;&#x9694;</span>
+    <span class="token key property">description</span> <span class="token punctuation">=</span> <span class="token string">&quot;Service Mesh&#x7231;&#x597D;&#x8005;&quot;</span>
+    <span class="token comment"># &#x7559;&#x7A7A;&#xFF0C;&#x4E0D;&#x542F;&#x7528;&#x8C37;&#x6B4C;&#x5730;&#x56FE;</span>
+    <span class="token key property">googleMapsApiKey</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>
+    <span class="token comment"># Baidu&#x7EDF;&#x8BA1;&#x7684;token</span>
+    <span class="token key property">baiduKey</span><span class="token punctuation">=</span><span class="token string">&quot;761ec5e305f799778975c1f71c47a520&quot;</span>
 
-    # &#x9009;&#x7528;&#x7684; CSS&#xFF0C;&#x53EF;&#x9009;&#x7684;&#x6709;&#xFF1A;default&#xFF08;&#x6D45;&#x84DD;&#xFF09;&#x3001;blue&#x3001;green&#x3001;marsala,&#x3001;pink&#x3001;red&#x3001;turquoise&#x3001;violet&#xFF08;&#x6211;&#x7528;&#x7684;&#x8FD9;&#x4E2A;&#xFF09;
-    style = &quot;violet&quot;
+    <span class="token comment"># &#x9009;&#x7528;&#x7684; CSS&#xFF0C;&#x53EF;&#x9009;&#x7684;&#x6709;&#xFF1A;default&#xFF08;&#x6D45;&#x84DD;&#xFF09;&#x3001;blue&#x3001;green&#x3001;marsala,&#x3001;pink&#x3001;red&#x3001;turquoise&#x3001;violet&#xFF08;&#x6211;&#x7528;&#x7684;&#x8FD9;&#x4E2A;&#xFF09;</span>
+    <span class="token key property">style</span> <span class="token punctuation">=</span> <span class="token string">&quot;violet&quot;</span>
 
-    # 404&#x9875;&#x9762;&#x663E;&#x793A;&#x7684;&#x56FE;&#x7247;
-    errorimage = &quot;https://ws1.sinaimg.cn/large/00704eQkgy1frkahxdca2j30hd08wq52.jpg&quot;
-    # &#x9875;&#x811A;&#x663E;&#x793A;&#x7684;&#x5173;&#x4E8E;&#x4FE1;&#x606F;
-    about_us = &quot;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Service Mesh &#x7231;&#x597D;&#x8005;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>&quot;
-    copyright = &quot;Copyright &#xA9;&#xFE0F; 2018, ServiceMesher all rights reserved.&quot;
+    <span class="token comment"># 404&#x9875;&#x9762;&#x663E;&#x793A;&#x7684;&#x56FE;&#x7247;</span>
+    <span class="token key property">errorimage</span> <span class="token punctuation">=</span> <span class="token string">&quot;https://ws1.sinaimg.cn/large/00704eQkgy1frkahxdca2j30hd08wq52.jpg&quot;</span>
+    <span class="token comment"># &#x9875;&#x811A;&#x663E;&#x793A;&#x7684;&#x5173;&#x4E8E;&#x4FE1;&#x606F;</span>
+    <span class="token key property">about_us</span> <span class="token punctuation">=</span> <span class="token string">&quot;&lt;p&gt;Service Mesh &#x7231;&#x597D;&#x8005;&lt;/p&gt;&quot;</span>
+    <span class="token key property">copyright</span> <span class="token punctuation">=</span> <span class="token string">&quot;Copyright &#xA9;&#xFE0F; 2018, ServiceMesher all rights reserved.&quot;</span>
 
-    # Go&#x8BED;&#x8A00;&#x683C;&#x5F0F;&#x7684;&#x65F6;&#x95F4;&#x6A21;&#x677F;
-    date_format = &quot;2006-01-02&quot;
-    # &#x7F51;&#x7AD9;logo
-    logo = &quot;img/logo.png&quot;
-    address = &quot;&quot;&quot;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>ServiceMesher.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span>
-      &quot;&quot;&quot;
+    <span class="token comment"># Go&#x8BED;&#x8A00;&#x683C;&#x5F0F;&#x7684;&#x65F6;&#x95F4;&#x6A21;&#x677F;</span>
+    <span class="token key property">date_format</span> <span class="token punctuation">=</span> <span class="token string">&quot;2006-01-02&quot;</span>
+    <span class="token comment"># &#x7F51;&#x7AD9;logo</span>
+    <span class="token key property">logo</span> <span class="token punctuation">=</span> <span class="token string">&quot;img/logo.png&quot;</span>
+    <span class="token key property">address</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;&quot;&lt;p&gt;&lt;strong&gt;ServiceMesher.&lt;/strong&gt;
+      &quot;&quot;&quot;</span>
 
-[Permalinks]
-    # &#x535A;&#x5BA2;&#x4E2D;&#x6587;&#x7AE0;&#x7684;URL&#x89C4;&#x5219;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;/blog/2018/05/24/mypost/
-    #blog = &quot;/blog/:year/:month/:day/:filename/&quot;
-    blog = &quot;/blog/:filename/&quot;
+<span class="token punctuation">[</span><span class="token table class-name">Permalinks</span><span class="token punctuation">]</span>
+    <span class="token comment"># &#x535A;&#x5BA2;&#x4E2D;&#x6587;&#x7AE0;&#x7684;URL&#x89C4;&#x5219;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;/blog/2018/05/24/mypost/</span>
+    <span class="token comment">#blog = &quot;/blog/:year/:month/:day/:filename/&quot;</span>
+    <span class="token key property">blog</span> <span class="token punctuation">=</span> <span class="token string">&quot;/blog/:filename/&quot;</span>
 
-# &#x662F;&#x5426;&#x542F;&#x7528;&#x9876;&#x5C42;&#x901A;&#x77E5;&#x680F;
-[params.topbar]
-    enable = false 
-    text = &quot;&quot;&quot;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hidden-sm hidden-xs<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x6B22;&#x8FCE;&#x6765;&#x5230; Service Mesh &#x7231;&#x597D;&#x8005;&#x7F51;&#x7AD9;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-      &quot;&quot;&quot;
+<span class="token comment"># &#x662F;&#x5426;&#x542F;&#x7528;&#x9876;&#x5C42;&#x901A;&#x77E5;&#x680F;</span>
+<span class="token punctuation">[</span><span class="token table class-name">params.topbar</span><span class="token punctuation">]</span>
+    <span class="token key property">enable</span> <span class="token punctuation">=</span> <span class="token boolean">false</span> 
+    <span class="token key property">text</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;&quot;&lt;p class=&quot;hidden-sm hidden-xs&quot;&gt;&#x6B22;&#x8FCE;&#x6765;&#x5230; Service Mesh &#x7231;&#x597D;&#x8005;&#x7F51;&#x7AD9;&lt;/p&gt;
+      &quot;&quot;&quot;</span>
 
-# &#x662F;&#x5426;&#x542F;&#x7528;&#x53F3;&#x4FA7;&#x7684;&#x5C0F;&#x5DE5;&#x5177;
-[params.widgets]
-    categories = true
-    tags = true
-    search = true
+<span class="token comment"># &#x662F;&#x5426;&#x542F;&#x7528;&#x53F3;&#x4FA7;&#x7684;&#x5C0F;&#x5DE5;&#x5177;</span>
+<span class="token punctuation">[</span><span class="token table class-name">params.widgets</span><span class="token punctuation">]</span>
+    <span class="token key property">categories</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+    <span class="token key property">tags</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+    <span class="token key property">search</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
 
-[params.carousel]
-    enable = true
-    # &#x8BBE;&#x7F6E;&#x9996;&#x9875;&#x5927;&#x98CE;&#x8F66;&#x7684;&#x80CC;&#x666F;&#x56FE;&#x7247;
-    background = &quot;https://ws1.sinaimg.cn/large/00704eQkgy1frlkpcfzt4j30zk0k0at2.jpg&quot; 
+<span class="token punctuation">[</span><span class="token table class-name">params.carousel</span><span class="token punctuation">]</span>
+    <span class="token key property">enable</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+    <span class="token comment"># &#x8BBE;&#x7F6E;&#x9996;&#x9875;&#x5927;&#x98CE;&#x8F66;&#x7684;&#x80CC;&#x666F;&#x56FE;&#x7247;</span>
+    <span class="token key property">background</span> <span class="token punctuation">=</span> <span class="token string">&quot;https://ws1.sinaimg.cn/large/00704eQkgy1frlkpcfzt4j30zk0k0at2.jpg&quot;</span> 
 
-# &#x529F;&#x80FD;&#x663E;&#x793A;&#x680F;&#x76EE;
-[params.features]
-    enable = true
+<span class="token comment"># &#x529F;&#x80FD;&#x663E;&#x793A;&#x680F;&#x76EE;</span>
+<span class="token punctuation">[</span><span class="token table class-name">params.features</span><span class="token punctuation">]</span>
+    <span class="token key property">enable</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
 
-# &#x793E;&#x533A;&#x6D3B;&#x52A8;&#x680F;&#x76EE;
-[params.testimonials]
-    enable = true
-    title = &quot;&#x793E;&#x533A;&#x6D3B;&#x52A8;&quot;
-    subtitle = &quot;&#x6211;&#x4EEC;&#x4F1A;&#x4E0D;&#x5B9A;&#x671F;&#x5F97;&#x5728;&#x7EBF;&#x4E0A;&#x548C;&#x7EBF;&#x4E0B;&#x4E3E;&#x529E;&#x7CBE;&#x5F69;&#x7684;&#x6D3B;&#x52A8;&#xFF0C;&#x656C;&#x8BF7;&#x5173;&#x6CE8;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x5386;&#x53F2;&#x6D3B;&#x52A8;&#x8BB0;&#x5F55;&quot;
+<span class="token comment"># &#x793E;&#x533A;&#x6D3B;&#x52A8;&#x680F;&#x76EE;</span>
+<span class="token punctuation">[</span><span class="token table class-name">params.testimonials</span><span class="token punctuation">]</span>
+    <span class="token key property">enable</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+    <span class="token key property">title</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x793E;&#x533A;&#x6D3B;&#x52A8;&quot;</span>
+    <span class="token key property">subtitle</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x6211;&#x4EEC;&#x4F1A;&#x4E0D;&#x5B9A;&#x671F;&#x5F97;&#x5728;&#x7EBF;&#x4E0A;&#x548C;&#x7EBF;&#x4E0B;&#x4E3E;&#x529E;&#x7CBE;&#x5F69;&#x7684;&#x6D3B;&#x52A8;&#xFF0C;&#x656C;&#x8BF7;&#x5173;&#x6CE8;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x5386;&#x53F2;&#x6D3B;&#x52A8;&#x8BB0;&#x5F55;&quot;</span>
 
-# &#x53C2;&#x4E0E;&#x8FDB;&#x6765;&#x680F;&#x76EE;
-[params.see_more]
-    enable = true
-    icon = &quot;fa fa-pagelines&quot;
-    title = &quot;&#x53C2;&#x4E0E;&#x8FDB;&#x6765;&quot;
-    subtitle = &quot;&#x52A0;&#x5165; Service Mesh &#x7231;&#x597D;&#x8005;&#x7FA4;&#x4F53;&quot;
-    link_url = &quot;/contact&quot;
-    link_text = &quot;&#x67E5;&#x770B;&#x52A0;&#x5165;&#x65B9;&#x5F0F;&quot;
+<span class="token comment"># &#x53C2;&#x4E0E;&#x8FDB;&#x6765;&#x680F;&#x76EE;</span>
+<span class="token punctuation">[</span><span class="token table class-name">params.see_more</span><span class="token punctuation">]</span>
+    <span class="token key property">enable</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+    <span class="token key property">icon</span> <span class="token punctuation">=</span> <span class="token string">&quot;fa fa-pagelines&quot;</span>
+    <span class="token key property">title</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x53C2;&#x4E0E;&#x8FDB;&#x6765;&quot;</span>
+    <span class="token key property">subtitle</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x52A0;&#x5165; Service Mesh &#x7231;&#x597D;&#x8005;&#x7FA4;&#x4F53;&quot;</span>
+    <span class="token key property">link_url</span> <span class="token punctuation">=</span> <span class="token string">&quot;/contact&quot;</span>
+    <span class="token key property">link_text</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x67E5;&#x770B;&#x52A0;&#x5165;&#x65B9;&#x5F0F;&quot;</span>
 
-# &#x53C2;&#x4E0E;&#x8005;&#x680F;&#x76EE;
-[params.clients]
-    enable = true
-    title = &quot;&#x53C2;&#x4E0E;&#x8005;&quot;
-    subtitle = &quot;Envoy&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E2D;&#x6587;&#x7248;&#x5353;&#x8D8A;&#x8D21;&#x732E;&#x8005;&quot;
+<span class="token comment"># &#x53C2;&#x4E0E;&#x8005;&#x680F;&#x76EE;</span>
+<span class="token punctuation">[</span><span class="token table class-name">params.clients</span><span class="token punctuation">]</span>
+    <span class="token key property">enable</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+    <span class="token key property">title</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x53C2;&#x4E0E;&#x8005;&quot;</span>
+    <span class="token key property">subtitle</span> <span class="token punctuation">=</span> <span class="token string">&quot;Envoy&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E2D;&#x6587;&#x7248;&#x5353;&#x8D8A;&#x8D21;&#x732E;&#x8005;&quot;</span>
 
-# &#x6700;&#x65B0;&#x535A;&#x5BA2;&#x680F;&#x76EE;
-[params.recent_posts]
-    enable = true
-    title = &quot;&#x6700;&#x65B0;&#x535A;&#x5BA2;&quot;
-    subtitle = &quot;&#x793E;&#x533A;&#x53C2;&#x4E0E;&#x8005;&#x7684;&#x535A;&#x5BA2;&#x4E0E;&#x6700; in &#x7684;&#x65B0;&#x95FB;&#x90FD;&#x5728;&#x8FD9;&#x91CC;&quot;
+<span class="token comment"># &#x6700;&#x65B0;&#x535A;&#x5BA2;&#x680F;&#x76EE;</span>
+<span class="token punctuation">[</span><span class="token table class-name">params.recent_posts</span><span class="token punctuation">]</span>
+    <span class="token key property">enable</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+    <span class="token key property">title</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x6700;&#x65B0;&#x535A;&#x5BA2;&quot;</span>
+    <span class="token key property">subtitle</span> <span class="token punctuation">=</span> <span class="token string">&quot;&#x793E;&#x533A;&#x53C2;&#x4E0E;&#x8005;&#x7684;&#x535A;&#x5BA2;&#x4E0E;&#x6700; in &#x7684;&#x65B0;&#x95FB;&#x90FD;&#x5728;&#x8FD9;&#x91CC;&quot;</span>
 </code></pre>
 <h2 id="&#x8D44;&#x6E90;&#x76EE;&#x5F55;">&#x8D44;&#x6E90;&#x76EE;&#x5F55;</h2>
 <p>&#x6240;&#x6709;&#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x4FDD;&#x5B58;&#x5728;<code>static</code>&#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
 <p>&#x6240;&#x6709;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x5757;&#x7684;&#x914D;&#x7F6E;&#x90FD;&#x5728;<code>data</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;YAML&#x683C;&#x5F0F;&#x914D;&#x7F6E;&#x3002;</p>
 <p>JPG&#x683C;&#x5F0F;&#x7684;&#x56FE;&#x7247;&#x4F7F;&#x7528;&#x5FAE;&#x535A;&#x56FE;&#x5E8A;&#x4FDD;&#x5B58;&#x3002;</p>
 <p>&#x56E0;&#x4E3A;&#x5FAE;&#x535A;&#x56FE;&#x5E8A;&#x53EA;&#x80FD;&#x4FDD;&#x5B58;JPG&#x683C;&#x5F0F;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x4E3B;&#x9898;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x90E8;&#x5206;PNG&#x683C;&#x5F0F;&#xFF08;&#x56FE;&#x7247;&#x652F;&#x6301;&#x900F;&#x660E;&#xFF09;&#x4FDD;&#x5B58;&#x5728;GitHub&#x4E2D;&#x3002; </p>
-<footer class="page-footer"><span class="copyright">Copyright &#xA9; jimmysong.io 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated: 
-2018-05-25 17:51:16
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; jimmysong.io 2017-2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated at: 
+2020-08-25 15:19:17
 </span></footer>
                                 
                                 </section>
@@ -1087,7 +1087,7 @@ paginate = 10
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"hugo-universal主题模块说明","level":"7.2","depth":1,"next":{"title":"hugo-universal主题配置说明","level":"7.3","depth":1,"path":"themes/hugo-universal-settings.md","ref":"themes/hugo-universal-settings.md","articles":[]},"previous":{"title":"hugo-universal主题使用说明","level":"7.1","depth":1,"path":"themes/hugo-universal-overview.md","ref":"themes/hugo-universal-overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","image-captions","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default","-highlight","prism","prism-themes","sitemap-general"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © jimmysong.io 2017","modify_label":"Updated: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-ghcolors.css"]},"github":{"url":"https://github.com/rootsongjc/hugo-handbook"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/rootsongjc/hugo-handbook/blob/master/"},"splitter":{},"codesnippet":{},"sitemap-general":{"prefix":"https://jimmysong.io/hugo-handbook/"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"page-toc-button":{},"back-to-top-button":{},"prism-themes":{},"github-buttons":{"repo":"rootsongjc/hugo-handbook","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"11f7d254cfa4e0ca44b175c66d379ecc"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{},"image-captions":{"caption":"图片 - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Jimmy Song","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"steps/dns-setup.html#fig5.4.1","level":"5.4","list_caption":"Figure: Cloudflare页面","alt":"Cloudflare页面","nro":1,"url":"../images/dns-jimmysong-cloudflare.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Cloudflare页面","attributes":{},"skip":false,"key":"5.4.1"},{"backlink":"steps/env-setup.html#fig5.5.1","level":"5.5","list_caption":"Figure: 网站技术栈","alt":"网站技术栈","nro":2,"url":"../images/jimmysong-io-web-stack.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"网站技术栈","attributes":{},"skip":false,"key":"5.5.1"},{"backlink":"steps/static-file-storage.html#fig5.7.1","level":"5.7","list_caption":"Figure: 七牛云对象存储页面","alt":"七牛云对象存储页面","nro":3,"url":"../images/qiniu-storage-bucket.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"七牛云对象存储页面","attributes":{},"skip":false,"key":"5.7.1"},{"backlink":"steps/static-file-storage.html#fig5.7.2","level":"5.7","list_caption":"Figure: 七牛云存储文件管理页面","alt":"七牛云存储文件管理页面","nro":4,"url":"../images/qiniu-storage-content-management.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"七牛云存储文件管理页面","attributes":{},"skip":false,"key":"5.7.2"},{"backlink":"steps/static-file-storage.html#fig5.7.3","level":"5.7","list_caption":"Figure: Cloudniary媒体库","alt":"Cloudniary媒体库","nro":5,"url":"../images/cloudinary-media-library.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"Cloudniary媒体库","attributes":{},"skip":false,"key":"5.7.3"},{"backlink":"steps/static-file-storage.html#fig5.7.4","level":"5.7","list_caption":"Figure: 图片详情页面","alt":"图片详情页面","nro":6,"url":"../images/cloudinary-media-library-image-detail.jpg","index":4,"caption_template":"图片 - _CAPTION_","label":"图片详情页面","attributes":{},"skip":false,"key":"5.7.4"},{"backlink":"steps/security.html#fig5.12.1","level":"5.12","list_caption":"Figure: 运营商劫持","alt":"运营商劫持","nro":7,"url":"https://res.cloudinary.com/jimmysong/image/upload/images/operator-dns-hijacking-ad.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"运营商劫持","attributes":{},"skip":false,"key":"5.12.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.1","level":"5.13","list_caption":"Figure: jimmysong.io","alt":"jimmysong.io","nro":8,"url":"../images/ping-pe-jimmysong.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"jimmysong.io","attributes":{},"skip":false,"key":"5.13.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.2","level":"5.13","list_caption":"Figure: Grafana中监控的jimmysong.io","alt":"Grafana中监控的jimmysong.io","nro":9,"url":"../images/grafana-wordping-jimmysong.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"Grafana中监控的jimmysong.io","attributes":{},"skip":false,"key":"5.13.2"},{"backlink":"steps/seo.html#fig5.14.1","level":"5.14","list_caption":"Figure: Google webmaster页面","alt":"Google webmaster页面","nro":10,"url":"../images/google-search-console-404-errors.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Google webmaster页面","attributes":{},"skip":false,"key":"5.14.1"},{"backlink":"steps/seo.html#fig5.14.2","level":"5.14","list_caption":"Figure: SEO checklist","alt":"SEO checklist","nro":11,"url":"../images/seo-checklist.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"SEO checklist","attributes":{},"skip":false,"key":"5.14.2"},{"backlink":"steps/custom-email-server.html#fig5.15.1","level":"5.15","list_caption":"Figure: Mac邮箱客户端配置","alt":"Mac邮箱客户端配置","nro":12,"url":"../images/mail-account-setting.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"Mac邮箱客户端配置","attributes":{},"skip":false,"key":"5.15.1"},{"backlink":"steps/custom-email-server.html#fig5.15.2","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":13,"url":"../images/ios-mail-account1.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.2"},{"backlink":"steps/custom-email-server.html#fig5.15.3","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":14,"url":"../images/ios-mail-account2.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.3"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.1","level":"7.3","list_caption":"Figure: 风车模块","alt":"风车模块","nro":15,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnoluj5z8j32520pmwvi.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"风车模块","attributes":{},"skip":false,"key":"7.3.1"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.2","level":"7.3","list_caption":"Figure: testimonials模块","alt":"testimonials模块","nro":16,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnoobj2wcj32580uunin.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"testimonials模块","attributes":{},"skip":false,"key":"7.3.2"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.3","level":"7.3","list_caption":"Figure: see more模块","alt":"see more模块","nro":17,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnox9lwmfj32520ky1kx.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"see more模块","attributes":{},"skip":false,"key":"7.3.3"}]},"title":"静态网站构建手册-使用Hugo构建博客","language":"zh-hans","links":{"sidebar":{"Jimmy Song":"https://jimmysong.io"}},"gitbook":"*","description":"静态网站构建手册-使用Hugo构建博客"},"file":{"path":"themes/hugo-universal-templates.md","mtime":"2018-05-25T09:51:16.777Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-07-08T10:27:31.799Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"hugo-universal主题模块说明","level":"7.2","depth":1,"next":{"title":"hugo-universal主题配置说明","level":"7.3","depth":1,"path":"themes/hugo-universal-settings.md","ref":"themes/hugo-universal-settings.md","articles":[]},"previous":{"title":"hugo-universal主题使用说明","level":"7.1","depth":1,"path":"themes/hugo-universal-overview.md","ref":"themes/hugo-universal-overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","image-captions","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default","-highlight","prism","prism-themes","sitemap-general","ga"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © jimmysong.io 2017-2020","modify_label":"Updated at: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-ghcolors.css"]},"github":{"url":"https://github.com/rootsongjc/hugo-handbook"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/rootsongjc/hugo-handbook/blob/master/"},"splitter":{},"codesnippet":{},"sitemap-general":{"prefix":"https://jimmysong.io/hugo-handbook/"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"page-toc-button":{},"back-to-top-button":{},"prism-themes":{},"github-buttons":{"repo":"rootsongjc/hugo-handbook","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"11f7d254cfa4e0ca44b175c66d379ecc"},"ga":{"configuration":"auto","token":"UA-93485976-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{},"image-captions":{"caption":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"宋净超（Jimmy Song）","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"steps/dns-setup.html#fig5.4.1","level":"5.4","list_caption":"Figure: Cloudflare页面","alt":"Cloudflare页面","nro":1,"url":"../images/dns-jimmysong-cloudflare.jpg","index":1,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"Cloudflare页面","attributes":{},"skip":false,"key":"5.4.1"},{"backlink":"steps/env-setup.html#fig5.5.1","level":"5.5","list_caption":"Figure: 网站技术栈","alt":"网站技术栈","nro":2,"url":"../images/jimmysong-io-web-stack.jpg","index":1,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"网站技术栈","attributes":{},"skip":false,"key":"5.5.1"},{"backlink":"steps/static-file-storage.html#fig5.7.1","level":"5.7","list_caption":"Figure: 七牛云对象存储页面","alt":"七牛云对象存储页面","nro":3,"url":"../images/qiniu-storage-bucket.jpg","index":1,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"七牛云对象存储页面","attributes":{},"skip":false,"key":"5.7.1"},{"backlink":"steps/static-file-storage.html#fig5.7.2","level":"5.7","list_caption":"Figure: 七牛云存储文件管理页面","alt":"七牛云存储文件管理页面","nro":4,"url":"../images/qiniu-storage-content-management.jpg","index":2,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"七牛云存储文件管理页面","attributes":{},"skip":false,"key":"5.7.2"},{"backlink":"steps/static-file-storage.html#fig5.7.3","level":"5.7","list_caption":"Figure: Cloudniary媒体库","alt":"Cloudniary媒体库","nro":5,"url":"../images/cloudinary-media-library.jpg","index":3,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"Cloudniary媒体库","attributes":{},"skip":false,"key":"5.7.3"},{"backlink":"steps/static-file-storage.html#fig5.7.4","level":"5.7","list_caption":"Figure: 图片详情页面","alt":"图片详情页面","nro":6,"url":"../images/cloudinary-media-library-image-detail.jpg","index":4,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"图片详情页面","attributes":{},"skip":false,"key":"5.7.4"},{"backlink":"steps/security.html#fig5.12.1","level":"5.12","list_caption":"Figure: 运营商劫持","alt":"运营商劫持","nro":7,"url":"https://res.cloudinary.com/jimmysong/image/upload/images/operator-dns-hijacking-ad.jpg","index":1,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"运营商劫持","attributes":{},"skip":false,"key":"5.12.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.1","level":"5.13","list_caption":"Figure: jimmysong.io","alt":"jimmysong.io","nro":8,"url":"../images/ping-pe-jimmysong.jpg","index":1,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"jimmysong.io","attributes":{},"skip":false,"key":"5.13.1"},{"backlink":"steps/website-performence-optimization.html#fig5.13.2","level":"5.13","list_caption":"Figure: Grafana中监控的jimmysong.io","alt":"Grafana中监控的jimmysong.io","nro":9,"url":"../images/grafana-wordping-jimmysong.jpg","index":2,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"Grafana中监控的jimmysong.io","attributes":{},"skip":false,"key":"5.13.2"},{"backlink":"steps/seo.html#fig5.14.1","level":"5.14","list_caption":"Figure: Google webmaster页面","alt":"Google webmaster页面","nro":10,"url":"../images/google-search-console-404-errors.jpg","index":1,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"Google webmaster页面","attributes":{},"skip":false,"key":"5.14.1"},{"backlink":"steps/seo.html#fig5.14.2","level":"5.14","list_caption":"Figure: SEO checklist","alt":"SEO checklist","nro":11,"url":"../images/seo-checklist.jpg","index":2,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"SEO checklist","attributes":{},"skip":false,"key":"5.14.2"},{"backlink":"steps/custom-email-server.html#fig5.15.1","level":"5.15","list_caption":"Figure: Mac邮箱客户端配置","alt":"Mac邮箱客户端配置","nro":12,"url":"../images/mail-account-setting.jpg","index":1,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"Mac邮箱客户端配置","attributes":{},"skip":false,"key":"5.15.1"},{"backlink":"steps/custom-email-server.html#fig5.15.2","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":13,"url":"../images/ios-mail-account1.jpg","index":2,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.2"},{"backlink":"steps/custom-email-server.html#fig5.15.3","level":"5.15","list_caption":"Figure: iOS邮箱设置","alt":"iOS邮箱设置","nro":14,"url":"../images/ios-mail-account2.jpg","index":3,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"iOS邮箱设置","attributes":{},"skip":false,"key":"5.15.3"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.1","level":"7.3","list_caption":"Figure: 风车模块","alt":"风车模块","nro":15,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnoluj5z8j32520pmwvi.jpg","index":1,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"风车模块","attributes":{},"skip":false,"key":"7.3.1"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.2","level":"7.3","list_caption":"Figure: testimonials模块","alt":"testimonials模块","nro":16,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnoobj2wcj32580uunin.jpg","index":2,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"testimonials模块","attributes":{},"skip":false,"key":"7.3.2"},{"backlink":"themes/hugo-universal-settings.html#fig7.3.3","level":"7.3","list_caption":"Figure: see more模块","alt":"see more模块","nro":17,"url":"https://ws1.sinaimg.cn/large/00704eQkgy1frnox9lwmfj32520ky1kx.jpg","index":3,"caption_template":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_","label":"see more模块","attributes":{},"skip":false,"key":"7.3.3"}]},"title":"Hugo 静态网站构建手册","language":"zh-hans","links":{"sidebar":{"回到主页":"https://jimmysong.io"}},"gitbook":"*","description":"使用 Hugo 高效构建静态网站。"},"file":{"path":"themes/hugo-universal-templates.md","mtime":"2020-08-25T15:19:17.002Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-25T15:20:30.497Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1130,6 +1130,10 @@ paginate = 10
     
         
         <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
         
     
         
