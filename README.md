@@ -2,6 +2,12 @@
 
 本手册将指导你如何使用[Hugo](https://gohugo.io)构建静态网站用于个人博客或者项目展示。
 
+<div align="center">
+  <a href="https://jimmysong.io/hugo-handbook/">
+    <img src="cover-thumbnail.jpg" title="Hugo handbook" alt="Hugo handbook">
+  </a>
+</div>
+
 手把手教你如何从0开始构建一个静态网站，这不需要有太多的编程和开发经验和时间投入，也基本不需要多少成本（除了个性化域名），使用GitHub和Hugo模板即可快速构建和上线一个网站。
 
 - 在线浏览地址：https://jimmysong.io/hugo-handbook
